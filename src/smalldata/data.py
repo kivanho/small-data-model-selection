@@ -1,7 +1,9 @@
 """Loading and validating a small vehicle design dataset from CSV.
 
 The expected schema has 9 design variables (features) and 5 functional
-attributes (targets). An optional ``vehicle_id`` column is used as the index.
+attributes (targets). An optional ``vehicle_id`` column is used as the index, and an
+optional ``platform_group`` column marks vehicles that share a platform (badge-engineered
+twins), so cross-validation can keep each group in a single fold.
 """
 
 from __future__ import annotations
@@ -32,22 +34,25 @@ TARGETS: list[str] = [
 ]
 
 ID_COLUMN = "vehicle_id"
+GROUP_COLUMN = "platform_group"
 
 
 @dataclass
 class Dataset:
     X: pd.DataFrame
     Y: pd.DataFrame
+    groups: pd.Series
+    """Platform group per row. Rows without a group are their own group."""
 
     @property
     def n_samples(self) -> int:
         return len(self.X)
 
-    def target(self, name: str) -> tuple[pd.DataFrame, pd.Series]:
-        """Return (X, y) for one target, dropping rows where that target is missing."""
+    def target(self, name: str) -> tuple[pd.DataFrame, pd.Series, pd.Series]:
+        """Return (X, y, groups) for one target, dropping rows where that target is missing."""
         y = self.Y[name]
         mask = y.notna()
-        return self.X.loc[mask], y.loc[mask]
+        return self.X.loc[mask], y.loc[mask], self.groups.loc[mask]
 
 
 def load_dataset(path: str | Path, column_map: dict[str, str] | None = None) -> Dataset:
@@ -63,7 +68,8 @@ def load_dataset(path: str | Path, column_map: dict[str, str] | None = None) -> 
 
     Missing feature values are allowed: they are mean-imputed inside the model
     pipeline, i.e. fitted on training folds only. Missing target values are allowed
-    and those rows are skipped for that target.
+    and those rows are skipped for that target. Without a ``platform_group`` column,
+    every row is its own group (plain shuffled K-fold).
     """
     df = pd.read_csv(path)
     if column_map:
@@ -82,4 +88,9 @@ def load_dataset(path: str | Path, column_map: dict[str, str] | None = None) -> 
         cols = bad.columns[bad.any()].tolist()
         raise ValueError(f"Non-numeric values found in columns: {cols}")
 
-    return Dataset(X=numeric[FEATURES], Y=numeric[TARGETS])
+    if GROUP_COLUMN in df.columns:
+        groups = df[GROUP_COLUMN].astype("string").fillna(pd.Series(df.index.astype(str), index=df.index))
+    else:
+        groups = pd.Series(df.index.astype(str), index=df.index)
+
+    return Dataset(X=numeric[FEATURES], Y=numeric[TARGETS], groups=groups.rename(GROUP_COLUMN))

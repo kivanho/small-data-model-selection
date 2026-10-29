@@ -1,7 +1,11 @@
-numpy>=1.26
-pandas>=2.1
-scikit-learn>=1.4
-scipy>=1.11
-mlxtend>=0.23
-matplotlib>=3.8
-jupyterlab>=4.0
+# Tested with Python 3.12
+numpy==2.5.4
+pandas==3.1.0
+scikit-learn==1.9.1
+scipy==1.18.1
+mlxtend==0.25.0
+joblib==1.6.0
+matplotlib==3.11.2
+jupyterlab==4.6.4
+nbconvert==7.17.2
+ipykernel==7.4.0
