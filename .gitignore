@@ -1,0 +1,13 @@
+# Only the published dataset is tracked; anything else in data/ stays local
+data/*
+!data/midsize_sedans.csv
+*.xlsx
+*.xls
+*.joblib
+*.pkl
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+.DS_Store

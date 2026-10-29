@@ -1,0 +1,85 @@
+"""Loading and validating a small vehicle design dataset from CSV.
+
+The expected schema has 9 design variables (features) and 5 functional
+attributes (targets). An optional ``vehicle_id`` column is used as the index.
+"""
+
+from __future__ import annotations
+
+from dataclasses import dataclass
+from pathlib import Path
+
+import pandas as pd
+
+FEATURES: list[str] = [
+    "fuel_tank_capacity_gal",
+    "engine_displacement_cc",
+    "front_track_width_in",
+    "wheelbase_in",
+    "ground_clearance_in",
+    "height_in",
+    "length_in",
+    "tire_width_mm",
+    "tire_diameter_in",
+]
+
+TARGETS: list[str] = [
+    "passenger_volume_cuft",
+    "cargo_volume_cuft",
+    "towing_capacity_lb",
+    "fuel_efficiency_mpg",
+    "acceleration_0_60_s",
+]
+
+ID_COLUMN = "vehicle_id"
+
+
+@dataclass
+class Dataset:
+    X: pd.DataFrame
+    Y: pd.DataFrame
+
+    @property
+    def n_samples(self) -> int:
+        return len(self.X)
+
+    def target(self, name: str) -> tuple[pd.DataFrame, pd.Series]:
+        """Return (X, y) for one target, dropping rows where that target is missing."""
+        y = self.Y[name]
+        mask = y.notna()
+        return self.X.loc[mask], y.loc[mask]
+
+
+def load_dataset(path: str | Path, column_map: dict[str, str] | None = None) -> Dataset:
+    """Load a CSV with the 9 feature and 5 target columns.
+
+    Parameters
+    ----------
+    path:
+        CSV file. Extra columns are ignored.
+    column_map:
+        Optional ``{your_column: expected_column}`` mapping, applied before validation,
+        so a file with different headers can be used without editing it.
+
+    Missing feature values are allowed: they are mean-imputed inside the model
+    pipeline, i.e. fitted on training folds only. Missing target values are allowed
+    and those rows are skipped for that target.
+    """
+    df = pd.read_csv(path)
+    if column_map:
+        df = df.rename(columns=column_map)
+
+    missing = [c for c in FEATURES + TARGETS if c not in df.columns]
+    if missing:
+        raise ValueError(f"CSV is missing required columns: {missing}")
+
+    if ID_COLUMN in df.columns:
+        df = df.set_index(ID_COLUMN)
+
+    numeric = df[FEATURES + TARGETS].apply(pd.to_numeric, errors="coerce")
+    bad = numeric.isna() & df[FEATURES + TARGETS].notna()
+    if bad.any().any():
+        cols = bad.columns[bad.any()].tolist()
+        raise ValueError(f"Non-numeric values found in columns: {cols}")
+
+    return Dataset(X=numeric[FEATURES], Y=numeric[TARGETS])
