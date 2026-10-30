@@ -259,7 +259,8 @@ interaction terms is not part of this repository.
 * Every run writes `run_meta.json` with the configuration, the CSV's sha256, the git commit and
   the dependency versions; `predictions.csv` lets every claimed score be recomputed from the
   per-sample out-of-fold predictions. The published benchmark was run at commit `d35e5da`
-  (the library is unchanged since, apart from CSV float formatting) on an 8-core Apple M1,
+  (the modelling code is unchanged since; later commits only round artifact CSV floats to 7
+  significant digits and make secondary tables optional when loading) on an 8-core Apple M1,
   11.5 minutes wall time.
 
 ## Repository layout

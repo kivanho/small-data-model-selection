@@ -30,7 +30,6 @@ from pathlib import Path
 from .artifacts import check_run, save_run
 from .data import TARGETS, load_dataset
 from .modeling import (
-    COMPLETE_PROCEDURE,
     N_ITER,
     SEEDS,
     baseline_candidates,
@@ -144,7 +143,6 @@ def main(argv: list[str] | None = None) -> int:
     print(f"wrote {out} : {report}", file=sys.stderr)
     if report["n_failed_candidates"]:
         print(f"note: {report['n_failed_candidates']} search candidates were excluded (see failures.csv)", file=sys.stderr)
-    _ = COMPLETE_PROCEDURE
     return 0
 
 
