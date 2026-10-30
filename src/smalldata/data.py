@@ -8,9 +8,11 @@ twins), so cross-validation can keep each group in a single fold.
 
 from __future__ import annotations
 
+import hashlib
 from dataclasses import dataclass
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 
 FEATURES: list[str] = [
@@ -88,9 +90,26 @@ def load_dataset(path: str | Path, column_map: dict[str, str] | None = None) -> 
         cols = bad.columns[bad.any()].tolist()
         raise ValueError(f"Non-numeric values found in columns: {cols}")
 
+    if np.isinf(numeric.to_numpy(dtype=float)).any():
+        cols = numeric.columns[np.isinf(numeric).any()].tolist()
+        raise ValueError(f"Infinite values found in columns: {cols}")
+    if len(numeric) == 0:
+        raise ValueError("CSV has no data rows")
+    if not numeric.index.is_unique:
+        raise ValueError(f"Duplicate {ID_COLUMN} values: {numeric.index[numeric.index.duplicated()].tolist()}")
+
     if GROUP_COLUMN in df.columns:
         groups = df[GROUP_COLUMN].astype("string").fillna(pd.Series(df.index.astype(str), index=df.index))
     else:
         groups = pd.Series(df.index.astype(str), index=df.index)
 
     return Dataset(X=numeric[FEATURES], Y=numeric[TARGETS], groups=groups.rename(GROUP_COLUMN))
+
+
+def file_sha256(path: str | Path) -> str:
+    """SHA-256 of the file bytes, recorded in run artifacts as the data fingerprint."""
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(1 << 20), b""):
+            h.update(chunk)
+    return h.hexdigest()
