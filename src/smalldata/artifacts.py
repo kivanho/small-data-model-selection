@@ -169,8 +169,22 @@ def save_run(results: list[CVResult], out_dir: str | Path, config: dict, data_pa
 
 
 def load_run(out_dir: str | Path) -> tuple[dict[str, pd.DataFrame], dict]:
+    """Read the artifact tables and ``run_meta.json``.
+
+    ``predictions.csv``, ``metrics.csv`` and ``run_meta.json`` are required. The other tables
+    are optional so that a published copy can omit the redundant ``folds.csv`` (its fold and
+    group columns are also in ``predictions.csv``); missing optional tables are returned empty.
+    """
     out = Path(out_dir)
-    tables = {name: pd.read_csv(out / f"{name}.csv") for name in TABLES}
+    tables = {}
+    for name in TABLES:
+        path = out / f"{name}.csv"
+        if path.exists():
+            tables[name] = pd.read_csv(path)
+        elif name in ("predictions", "metrics"):
+            raise FileNotFoundError(path)
+        else:
+            tables[name] = pd.DataFrame()
     meta = json.loads((out / "run_meta.json").read_text())
     return tables, meta
 

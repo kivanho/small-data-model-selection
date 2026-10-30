@@ -71,13 +71,20 @@ def test_save_and_load_run_round_trip(tmp_path, grouped_data, linear_candidate, 
     assert len(pred) == 2 * len(y)
     assert set(pred.columns) >= {"protocol", "target", "model", "seed", "fold_seed", "search_seed", "sample_id", "group", "fold", "y_true", "y_pred"}
     lin = pred[pred["model"] == "Linear regression"].set_index("sample_id")
-    np.testing.assert_allclose(lin.loc[y.index, "y_pred"], runs[0].predictions.to_numpy())
-    np.testing.assert_allclose(lin.loc[y.index, "y_true"], y.to_numpy())
+    np.testing.assert_allclose(lin.loc[y.index, "y_pred"], runs[0].predictions.to_numpy(), rtol=1e-6)  # 7 significant digits
+    np.testing.assert_allclose(lin.loc[y.index, "y_true"], y.to_numpy(), rtol=1e-6)
     assert tables["selections"]["params"].map(json.loads).notna().all()
     assert meta["data"]["sha256"] == file_sha256(csv) and len(meta["data"]["sha256"]) == 64
     assert meta["versions"]["scikit-learn"] and meta["config"] == {"note": "test"}
     assert "git_commit" in meta
     assert check_run(out, expected_n={"target": len(y)})["n_runs"] == 2
+    # a published copy may omit the redundant folds table; predictions and metrics are required
+    (out / "folds.csv").unlink()
+    tables, _ = load_run(out)
+    assert tables["folds"].empty and check_run(out, expected_n={"target": len(y)})["n_runs"] == 2
+    (out / "metrics.csv").unlink()
+    with pytest.raises(FileNotFoundError):
+        load_run(out)
 
 
 def test_check_run_detects_nonfinite_and_incomplete(tmp_path, grouped_data, linear_candidate):
