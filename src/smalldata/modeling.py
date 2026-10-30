@@ -377,7 +377,15 @@ def _tune(candidate: Candidate, X, y, cv, groups, n_iter: int, seed: int, ctx: d
         est, candidate.param_distributions, n_iter=n_iter, cv=cv, scoring=SCORING,
         random_state=seed, refit=False, error_score=np.nan,
     )
-    search.fit(X, y, groups=groups)
+    try:
+        search.fit(X, y, groups=groups)
+    except ValueError as exc:  # sklearn raises itself when every fit of every candidate failed
+        if "fits failed" not in str(exc):
+            raise
+        raise InvalidFitError(
+            f"{ctx['model']} / {ctx['target']} / seed {ctx['seed']} / fold {fold}: all {n_iter} search "
+            f"candidates failed on every inner fold: {str(exc).strip().splitlines()[-1]}"
+        ) from exc
     cvres = search.cv_results_
     n_splits = search.n_splits_
     split_scores = np.vstack([cvres[f"split{i}_test_score"] for i in range(n_splits)])  # (n_splits, n_cand)
