@@ -1,0 +1,111 @@
+protocol,target,model,n_runs,n_folds,mean_n_features,jaccard,runtime_s_mean,select_share,n_warnings,n_failed_candidates
+flat (thesis re-implementation),acceleration_0_60_s,Lasso,5,5,4.4,0.76,4.155422,0.7888698,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Lasso (no SFS),5,5,9,1,0.8428628,0,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Linear regression,5,5,5,1,3.748767,0.9721521,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Mean,5,5,9,1,0.169513,0,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Ridge (all features),5,5,9,1,0.942316,0,0,0
+flat (thesis re-implementation),acceleration_0_60_s,SVR,5,5,6,0.5738095,5.267944,0.79137,0,0
+flat (thesis re-implementation),acceleration_0_60_s,kNN,5,5,2.6,0.3833333,5.97124,0.8670155,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Lasso,5,5,4.8,0.5841667,2.338388,0.7940143,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Lasso (no SFS),5,5,9,1,0.4668227,0,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Linear regression,5,5,5.2,0.6365476,1.835293,0.9672538,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Mean,5,5,9,1,0.04999431,0,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Ridge (all features),5,5,9,1,0.5771777,0,0,0
+flat (thesis re-implementation),cargo_volume_cuft,SVR,5,5,4.8,0.5628571,3.033435,0.8333261,0,0
+flat (thesis re-implementation),cargo_volume_cuft,kNN,5,5,2.6,0.5366667,2.411155,0.8170858,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Lasso,5,5,1.6,0.575,2.966558,0.7677024,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Lasso (no SFS),5,5,9,1,0.8182816,0,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Linear regression,5,5,2.8,0.4333333,3.113535,0.9752544,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Mean,5,5,9,1,0.09992832,0,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Ridge (all features),5,5,9,1,0.7432618,0,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,SVR,5,5,3.8,0.2978571,3.802661,0.7854896,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,kNN,5,5,1.8,0.8,4.012536,0.8442695,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Lasso,5,5,4.2,0.5309524,2.194534,0.7941516,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Lasso (no SFS),5,5,9,1,0.4429398,0,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Linear regression,5,5,4.8,0.8,2.066595,0.9765147,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Mean,5,5,9,1,0.07104694,0,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Ridge (all features),5,5,9,1,0.4509519,0,0,0
+flat (thesis re-implementation),passenger_volume_cuft,SVR,5,5,6.4,0.5196429,2.9834,0.8182068,0,0
+flat (thesis re-implementation),passenger_volume_cuft,kNN,5,5,5.6,0.4702778,2.84253,0.8366703,0,0
+flat (thesis re-implementation),towing_capacity_lb,Lasso,5,5,6,0.6178571,2.778165,0.8087695,0,0
+flat (thesis re-implementation),towing_capacity_lb,Lasso (no SFS),5,5,9,1,0.5798599,0,0,0
+flat (thesis re-implementation),towing_capacity_lb,Linear regression,5,5,6.8,0.7928571,2.569378,0.9805994,0,0
+flat (thesis re-implementation),towing_capacity_lb,Mean,5,5,9,1,0.06925168,0,0,0
+flat (thesis re-implementation),towing_capacity_lb,Ridge (all features),5,5,9,1,0.5198207,0,0,0
+flat (thesis re-implementation),towing_capacity_lb,SVR,5,5,6.4,0.6742063,3.529748,0.8311041,0,0
+flat (thesis re-implementation),towing_capacity_lb,kNN,5,5,2.2,0.3666667,3.232283,0.8280139,0,0
+"nested, GroupKFold",acceleration_0_60_s,Complete procedure,5,25,4.12,0.4189934,56.04274,0.8670986,0,0
+"nested, GroupKFold",acceleration_0_60_s,Lasso,5,25,3.08,0.3881746,16.70375,0.815907,0,0
+"nested, GroupKFold",acceleration_0_60_s,Lasso (no SFS),5,25,9,1,2.49645,0,0,0
+"nested, GroupKFold",acceleration_0_60_s,Linear regression,5,25,3.68,0.3898929,15.65156,0.9836447,0,0
+"nested, GroupKFold",acceleration_0_60_s,Mean,5,25,9,1,0.1815353,0,0,0
+"nested, GroupKFold",acceleration_0_60_s,Ridge (all features),5,25,9,1,2.88836,0,0,0
+"nested, GroupKFold",acceleration_0_60_s,SVR,5,25,5.12,0.4617288,14.31228,0.8121213,0,0
+"nested, GroupKFold",acceleration_0_60_s,kNN,5,25,3.12,0.4359444,18.17943,0.8443443,0,0
+"nested, GroupKFold",cargo_volume_cuft,Complete procedure,5,25,4.6,0.6115159,66.31229,0.8513347,0,0
+"nested, GroupKFold",cargo_volume_cuft,Lasso,5,25,4.04,0.4807063,11.24355,0.8040303,0,0
+"nested, GroupKFold",cargo_volume_cuft,Lasso (no SFS),5,25,9,1,2.627869,0,0,0
+"nested, GroupKFold",cargo_volume_cuft,Linear regression,5,25,4.48,0.6049524,9.813662,0.9845006,0,0
+"nested, GroupKFold",cargo_volume_cuft,Mean,5,25,9,1,0.1676964,0,0,0
+"nested, GroupKFold",cargo_volume_cuft,Ridge (all features),5,25,9,1,3.698179,0,0,0
+"nested, GroupKFold",cargo_volume_cuft,SVR,5,25,4.96,0.4966111,17.43515,0.8285206,0,0
+"nested, GroupKFold",cargo_volume_cuft,kNN,5,25,2.48,0.4092857,15.48508,0.8409478,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Complete procedure,5,25,3.16,0.3737698,58.07611,0.8589897,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Lasso,5,25,2.08,0.5335952,12.68915,0.8167436,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Lasso (no SFS),5,25,9,1,3.236623,0,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Linear regression,5,25,2.52,0.3964286,11.24898,0.9849956,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Mean,5,25,9,1,0.1941308,0,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Ridge (all features),5,25,9,1,3.169452,0,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,SVR,5,25,3.88,0.366959,15.30877,0.7936171,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,kNN,5,25,2.92,0.4007659,16.20744,0.840126,0,0
+"nested, GroupKFold",passenger_volume_cuft,Complete procedure,5,25,4.48,0.4488889,73.93141,0.8636722,0,0
+"nested, GroupKFold",passenger_volume_cuft,Lasso,5,25,3.44,0.403123,11.94837,0.8179631,0,0
+"nested, GroupKFold",passenger_volume_cuft,Lasso (no SFS),5,25,9,1,2.100783,0,0,0
+"nested, GroupKFold",passenger_volume_cuft,Linear regression,5,25,3.84,0.4512989,11.75539,0.9857789,0,0
+"nested, GroupKFold",passenger_volume_cuft,Mean,5,25,9,1,0.1756845,0,0,0
+"nested, GroupKFold",passenger_volume_cuft,Ridge (all features),5,25,9,1,2.079396,0,0,0
+"nested, GroupKFold",passenger_volume_cuft,SVR,5,25,5.76,0.555664,12.71348,0.8144476,0,0
+"nested, GroupKFold",passenger_volume_cuft,kNN,5,25,4.48,0.3873836,13.86986,0.8413215,0,0
+"nested, GroupKFold",towing_capacity_lb,Complete procedure,5,25,5.2,0.443787,62.05538,0.8698193,0,0
+"nested, GroupKFold",towing_capacity_lb,Lasso,5,25,2.96,0.287295,14.85772,0.8119988,0,0
+"nested, GroupKFold",towing_capacity_lb,Lasso (no SFS),5,25,9,1,2.393325,0,0,0
+"nested, GroupKFold",towing_capacity_lb,Linear regression,5,25,5.6,0.5566548,15.11077,0.9861339,0,0
+"nested, GroupKFold",towing_capacity_lb,Mean,5,25,9,1,0.1667862,0,0,0
+"nested, GroupKFold",towing_capacity_lb,Ridge (all features),5,25,9,1,2.249387,0,0,0
+"nested, GroupKFold",towing_capacity_lb,SVR,5,25,5.28,0.4369153,14.90767,0.8229796,0,0
+"nested, GroupKFold",towing_capacity_lb,kNN,5,25,2.48,0.2026071,15.99543,0.8480831,0,0
+"nested, random KFold",acceleration_0_60_s,Lasso,5,25,3.72,0.4418876,12.53885,0.8119321,0,0
+"nested, random KFold",acceleration_0_60_s,Lasso (no SFS),5,25,9,1,2.050072,0,0,0
+"nested, random KFold",acceleration_0_60_s,Linear regression,5,25,4.16,0.4826733,11.61196,0.9831389,0,0
+"nested, random KFold",acceleration_0_60_s,Mean,5,25,9,1,0.1577501,0,0,0
+"nested, random KFold",acceleration_0_60_s,Ridge (all features),5,25,9,1,2.159362,0,0,0
+"nested, random KFold",acceleration_0_60_s,SVR,5,25,5.32,0.4653704,11.96178,0.8091276,0,0
+"nested, random KFold",acceleration_0_60_s,kNN,5,25,3.2,0.4024127,14.25913,0.8335545,0,0
+"nested, random KFold",cargo_volume_cuft,Lasso,5,25,4.08,0.632119,14.98455,0.8097588,0,0
+"nested, random KFold",cargo_volume_cuft,Lasso (no SFS),5,25,9,1,2.795008,0,0,0
+"nested, random KFold",cargo_volume_cuft,Linear regression,5,25,4.36,0.644045,13.25576,0.9834042,0,0
+"nested, random KFold",cargo_volume_cuft,Mean,5,25,9,1,0.1856728,0,0,0
+"nested, random KFold",cargo_volume_cuft,Ridge (all features),5,25,9,1,2.804685,0,0,0
+"nested, random KFold",cargo_volume_cuft,SVR,5,25,4.48,0.5351204,17.63314,0.8215618,0,0
+"nested, random KFold",cargo_volume_cuft,kNN,5,25,3,0.3978333,18.40371,0.8450899,0,0
+"nested, random KFold",fuel_efficiency_mpg,Lasso,5,25,2.12,0.4837778,12.84148,0.8018446,0,0
+"nested, random KFold",fuel_efficiency_mpg,Lasso (no SFS),5,25,9,1,2.787158,0,0,0
+"nested, random KFold",fuel_efficiency_mpg,Linear regression,5,25,3.08,0.3795635,12.56867,0.9840288,0,0
+"nested, random KFold",fuel_efficiency_mpg,Mean,5,25,9,1,0.2813055,0,0,0
+"nested, random KFold",fuel_efficiency_mpg,Ridge (all features),5,25,9,1,5.484785,0,0,0
+"nested, random KFold",fuel_efficiency_mpg,SVR,5,25,4.56,0.4066283,19.91077,0.8159349,0,0
+"nested, random KFold",fuel_efficiency_mpg,kNN,5,25,2.96,0.3951971,16.95842,0.8473426,0,0
+"nested, random KFold",passenger_volume_cuft,Lasso,5,25,4.08,0.4973175,19.21232,0.8314416,0,0
+"nested, random KFold",passenger_volume_cuft,Lasso (no SFS),5,25,9,1,2.888104,0,0,0
+"nested, random KFold",passenger_volume_cuft,Linear regression,5,25,4.24,0.5284722,17.50158,0.9819819,0,0
+"nested, random KFold",passenger_volume_cuft,Mean,5,25,9,1,0.2425866,0,0,0
+"nested, random KFold",passenger_volume_cuft,Ridge (all features),5,25,9,1,2.979977,0,0,0
+"nested, random KFold",passenger_volume_cuft,SVR,5,25,5.6,0.5155,17.17999,0.8175944,0,0
+"nested, random KFold",passenger_volume_cuft,kNN,5,25,5.4,0.5470146,17.08121,0.8319136,0,0
+"nested, random KFold",towing_capacity_lb,Lasso,5,25,4.8,0.4560873,18.09805,0.8374637,0,0
+"nested, random KFold",towing_capacity_lb,Lasso (no SFS),5,25,9,1,2.617867,0,0,0
+"nested, random KFold",towing_capacity_lb,Linear regression,5,25,6.44,0.7323214,14.99411,0.9853592,0,0
+"nested, random KFold",towing_capacity_lb,Mean,5,25,9,1,0.1853596,0,0,0
+"nested, random KFold",towing_capacity_lb,Ridge (all features),5,25,9,1,2.498354,0,0,0
+"nested, random KFold",towing_capacity_lb,SVR,5,25,5.64,0.4810225,18.18802,0.8378208,0,0
+"nested, random KFold",towing_capacity_lb,kNN,5,25,2.8,0.2248929,20.0044,0.8336007,0,0

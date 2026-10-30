@@ -141,14 +141,14 @@ def save_run(results: list[CVResult], out_dir: str | Path, config: dict, data_pa
     out.mkdir(parents=True, exist_ok=True)
     if not results:
         raise ValueError("no results to save")
-    predictions_frame(results, y_by_target).to_csv(out / "predictions.csv", index=False)
-    folds_frame(results).to_csv(out / "folds.csv", index=False)
-    selections_frame(results).to_csv(out / "selections.csv", index=False)
-    warnings_frame(results).to_csv(out / "warnings.csv", index=False)
-    failures_frame(results).to_csv(out / "failures.csv", index=False)
-    metrics_frame(results).to_csv(out / "metrics.csv", index=False)
-    summary_frame(results).to_csv(out / "summary.csv", index=False)
-    stability_frame(results).to_csv(out / "stability.csv", index=False)
+    predictions_frame(results, y_by_target).to_csv(out / "predictions.csv", index=False, float_format="%.7g")
+    folds_frame(results).to_csv(out / "folds.csv", index=False, float_format="%.7g")
+    selections_frame(results).to_csv(out / "selections.csv", index=False, float_format="%.7g")
+    warnings_frame(results).to_csv(out / "warnings.csv", index=False, float_format="%.7g")
+    failures_frame(results).to_csv(out / "failures.csv", index=False, float_format="%.7g")
+    metrics_frame(results).to_csv(out / "metrics.csv", index=False, float_format="%.7g")
+    summary_frame(results).to_csv(out / "summary.csv", index=False, float_format="%.7g")
+    stability_frame(results).to_csv(out / "stability.csv", index=False, float_format="%.7g")
 
     root = Path(repo_root) if repo_root else Path(__file__).resolve().parents[2]
     meta = {
