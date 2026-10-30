@@ -1,0 +1,551 @@
+protocol,target,model,seed,fold_seed,search_seed,R2,R2_fold_mean,RMSE,MAE,MAPE_%,runtime_s,n_warnings,n_failed_candidates
+"nested, GroupKFold",passenger_volume_cuft,Linear regression,0,0,0,0.4312319,-1.394554,4.250485,3.636078,3.731684,11.50308,0,0
+"nested, GroupKFold",passenger_volume_cuft,Linear regression,1,1,1,0.4904028,-2.088282,4.023318,3.265628,3.418584,10.71893,0,0
+"nested, GroupKFold",passenger_volume_cuft,Linear regression,2,2,2,0.3437801,0.1794326,4.565575,3.458242,3.637192,14.38504,0,0
+"nested, GroupKFold",passenger_volume_cuft,Linear regression,3,3,3,0.2711655,-19.30295,4.811553,4.093785,4.212995,10.67639,0,0
+"nested, GroupKFold",passenger_volume_cuft,Linear regression,4,4,4,0.2297836,-0.2885044,4.946263,4.23282,4.395359,11.49352,0,0
+"nested, GroupKFold",passenger_volume_cuft,Lasso,0,0,0,0.4994108,-0.1041825,3.9876,3.211399,3.346241,11.40226,0,0
+"nested, GroupKFold",passenger_volume_cuft,Lasso,1,1,1,0.3919209,-1.509918,4.394919,3.460535,3.638643,12.11192,0,0
+"nested, GroupKFold",passenger_volume_cuft,Lasso,2,2,2,0.4297518,0.2389332,4.256012,3.296272,3.461362,13.27332,0,0
+"nested, GroupKFold",passenger_volume_cuft,Lasso,3,3,3,0.3788189,-14.04901,4.442014,3.722002,3.860164,11.18214,0,0
+"nested, GroupKFold",passenger_volume_cuft,Lasso,4,4,4,0.3942567,-0.05946412,4.38647,3.630678,3.799638,11.77221,0,0
+"nested, GroupKFold",passenger_volume_cuft,kNN,0,0,0,0.3185284,-0.1125672,4.652589,3.520276,3.70823,13.29402,0,0
+"nested, GroupKFold",passenger_volume_cuft,kNN,1,1,1,0.1809897,-0.6814066,5.100532,4.043925,4.256494,14.38275,0,0
+"nested, GroupKFold",passenger_volume_cuft,kNN,2,2,2,0.2757001,0.07134753,4.796562,3.793985,3.998834,14.55329,0,0
+"nested, GroupKFold",passenger_volume_cuft,kNN,3,3,3,0.3489407,-4.664919,4.547588,3.387799,3.585246,12.82939,0,0
+"nested, GroupKFold",passenger_volume_cuft,kNN,4,4,4,0.2720482,-0.2424655,4.808639,3.859373,4.06925,14.28983,0,0
+"nested, GroupKFold",passenger_volume_cuft,SVR,0,0,0,0.4312037,-0.3819572,4.25059,3.379413,3.55159,12.2021,0,0
+"nested, GroupKFold",passenger_volume_cuft,SVR,1,1,1,0.5500512,-0.9626131,3.780527,3.156641,3.278748,13.54856,0,0
+"nested, GroupKFold",passenger_volume_cuft,SVR,2,2,2,0.4565873,0.2993423,4.154662,3.357437,3.526717,11.40319,0,0
+"nested, GroupKFold",passenger_volume_cuft,SVR,3,3,3,0.305887,-14.10175,4.695544,3.978577,4.137236,14.48793,0,0
+"nested, GroupKFold",passenger_volume_cuft,SVR,4,4,4,0.2642849,-0.1576828,4.834212,3.646059,3.754125,11.92561,0,0
+"nested, GroupKFold",passenger_volume_cuft,Mean,0,0,0,-0.04036079,-0.772192,5.74861,4.577543,4.774811,0.163715,0,0
+"nested, GroupKFold",passenger_volume_cuft,Mean,1,1,1,-0.08477186,-6.739611,5.870026,4.751026,4.945416,0.1967055,0,0
+"nested, GroupKFold",passenger_volume_cuft,Mean,2,2,2,-0.08915263,-0.3563704,5.881867,4.639626,4.83881,0.1428851,0,0
+"nested, GroupKFold",passenger_volume_cuft,Mean,3,3,3,-0.3497904,-11.5565,6.54793,5.311746,5.533174,0.1978178,0,0
+"nested, GroupKFold",passenger_volume_cuft,Mean,4,4,4,-0.1771801,-0.7273289,6.114941,5.038765,5.244066,0.1772993,0,0
+"nested, GroupKFold",passenger_volume_cuft,Ridge (all features),0,0,0,0.4821342,-1.363393,4.055827,3.418388,3.539526,2.127736,0,0
+"nested, GroupKFold",passenger_volume_cuft,Ridge (all features),1,1,1,0.5342457,-1.095623,3.846354,3.293823,3.409294,2.258829,0,0
+"nested, GroupKFold",passenger_volume_cuft,Ridge (all features),2,2,2,0.4707875,0.2379007,4.100019,3.493517,3.629321,2.056753,0,0
+"nested, GroupKFold",passenger_volume_cuft,Ridge (all features),3,3,3,0.3262314,-14.22694,4.626219,3.880377,4.04647,1.808211,0,0
+"nested, GroupKFold",passenger_volume_cuft,Ridge (all features),4,4,4,0.5014117,0.1590949,3.979623,3.310019,3.452035,2.145452,0,0
+"nested, GroupKFold",passenger_volume_cuft,Lasso (no SFS),0,0,0,0.4387211,-0.9665209,4.222408,3.574268,3.707355,2.080328,0,0
+"nested, GroupKFold",passenger_volume_cuft,Lasso (no SFS),1,1,1,0.4305571,-1.385194,4.253005,3.508589,3.667871,2.135449,0,0
+"nested, GroupKFold",passenger_volume_cuft,Lasso (no SFS),2,2,2,0.534375,0.3260115,3.84582,3.215996,3.340486,2.120036,0,0
+"nested, GroupKFold",passenger_volume_cuft,Lasso (no SFS),3,3,3,0.390133,-13.04673,4.401375,3.778287,3.91126,2.103349,0,0
+"nested, GroupKFold",passenger_volume_cuft,Lasso (no SFS),4,4,4,0.4114247,-0.005381661,4.323862,3.604543,3.767745,2.064753,0,0
+"nested, GroupKFold",cargo_volume_cuft,Linear regression,0,0,0,0.507753,0.184423,1.114381,0.8770386,5.723961,9.745619,0,0
+"nested, GroupKFold",cargo_volume_cuft,Linear regression,1,1,1,0.5394114,0.1424017,1.07795,0.7869936,5.066434,9.98495,0,0
+"nested, GroupKFold",cargo_volume_cuft,Linear regression,2,2,2,0.5712868,0.2729669,1.039982,0.8013275,5.232037,9.314087,0,0
+"nested, GroupKFold",cargo_volume_cuft,Linear regression,3,3,3,0.4488723,0.03008525,1.179148,0.8423185,5.360191,9.694595,0,0
+"nested, GroupKFold",cargo_volume_cuft,Linear regression,4,4,4,0.6353168,0.6197408,0.95918,0.7011694,4.459525,10.32906,0,0
+"nested, GroupKFold",cargo_volume_cuft,Lasso,0,0,0,0.5707622,0.3198345,1.040618,0.7955048,5.164184,11.42544,0,0
+"nested, GroupKFold",cargo_volume_cuft,Lasso,1,1,1,0.4871809,0.3145272,1.137429,0.9299352,5.999061,10.83204,0,0
+"nested, GroupKFold",cargo_volume_cuft,Lasso,2,2,2,0.6058123,0.3314743,0.9972265,0.7997333,5.170893,11.45849,0,0
+"nested, GroupKFold",cargo_volume_cuft,Lasso,3,3,3,0.4415574,-0.0493237,1.186947,0.9110606,5.814193,11.30916,0,0
+"nested, GroupKFold",cargo_volume_cuft,Lasso,4,4,4,0.495001,0.4419991,1.128723,0.9339016,6.017738,11.19262,0,0
+"nested, GroupKFold",cargo_volume_cuft,kNN,0,0,0,0.03550531,-0.6338592,1.559883,1.295536,8.437031,14.16159,0,0
+"nested, GroupKFold",cargo_volume_cuft,kNN,1,1,1,0.01186842,-0.6349832,1.578882,1.270419,8.00693,13.80342,0,0
+"nested, GroupKFold",cargo_volume_cuft,kNN,2,2,2,0.3520499,0.2053179,1.278536,1.062295,6.688709,15.48595,0,0
+"nested, GroupKFold",cargo_volume_cuft,kNN,3,3,3,-0.009219915,-1.18636,1.595641,1.266323,8.006285,16.46668,0,0
+"nested, GroupKFold",cargo_volume_cuft,kNN,4,4,4,0.3538971,0.328489,1.276712,1.040583,6.681768,17.50775,0,0
+"nested, GroupKFold",cargo_volume_cuft,SVR,0,0,0,0.2903759,0.04450624,1.338001,1.054787,6.732965,14.30024,0,0
+"nested, GroupKFold",cargo_volume_cuft,SVR,1,1,1,0.4213267,-0.04486778,1.208256,1.006057,6.525835,18.26168,0,0
+"nested, GroupKFold",cargo_volume_cuft,SVR,2,2,2,0.4940177,0.2256196,1.129822,0.9586839,6.13845,16.55223,0,0
+"nested, GroupKFold",cargo_volume_cuft,SVR,3,3,3,0.3820337,-0.2367867,1.248604,0.9696718,6.068985,20.04048,0,0
+"nested, GroupKFold",cargo_volume_cuft,SVR,4,4,4,0.5134029,0.3588777,1.107967,0.8660017,5.641567,18.02111,0,0
+"nested, GroupKFold",cargo_volume_cuft,Mean,0,0,0,-0.1956078,-0.8924511,1.736747,1.454563,9.433199,0.1613589,0,0
+"nested, GroupKFold",cargo_volume_cuft,Mean,1,1,1,-0.05095793,-0.2922822,1.628302,1.363385,8.854862,0.1718662,0,0
+"nested, GroupKFold",cargo_volume_cuft,Mean,2,2,2,-0.1229454,-0.4572941,1.683145,1.401517,9.099701,0.156565,0,0
+"nested, GroupKFold",cargo_volume_cuft,Mean,3,3,3,-0.1462615,-1.226233,1.700529,1.444739,9.375883,0.1852687,0,0
+"nested, GroupKFold",cargo_volume_cuft,Mean,4,4,4,-0.04183705,-0.1916834,1.621221,1.349579,8.770501,0.1634234,0,0
+"nested, GroupKFold",cargo_volume_cuft,Ridge (all features),0,0,0,0.4655024,0.1474604,1.161222,0.9599285,6.170807,2.619467,0,0
+"nested, GroupKFold",cargo_volume_cuft,Ridge (all features),1,1,1,0.3603097,0.08253812,1.270361,1.058342,6.829391,3.166174,0,0
+"nested, GroupKFold",cargo_volume_cuft,Ridge (all features),2,2,2,0.419854,0.1222846,1.209792,0.9297598,6.076478,4.211234,0,0
+"nested, GroupKFold",cargo_volume_cuft,Ridge (all features),3,3,3,0.3709825,-0.2644066,1.259719,0.9498997,6.010331,4.459647,0,0
+"nested, GroupKFold",cargo_volume_cuft,Ridge (all features),4,4,4,0.4800255,0.3795695,1.145337,0.899253,5.790728,4.034374,0,0
+"nested, GroupKFold",cargo_volume_cuft,Lasso (no SFS),0,0,0,0.5699878,0.3425024,1.041556,0.8195815,5.342372,3.477945,0,0
+"nested, GroupKFold",cargo_volume_cuft,Lasso (no SFS),1,1,1,0.4855976,0.2661506,1.139184,0.9155878,5.918184,2.510513,0,0
+"nested, GroupKFold",cargo_volume_cuft,Lasso (no SFS),2,2,2,0.6212024,0.350455,0.9775654,0.7860157,5.075211,2.471897,0,0
+"nested, GroupKFold",cargo_volume_cuft,Lasso (no SFS),3,3,3,0.4576933,-0.04187219,1.169674,0.9083457,5.766912,2.391857,0,0
+"nested, GroupKFold",cargo_volume_cuft,Lasso (no SFS),4,4,4,0.481759,0.4338797,1.143426,0.9302,5.962779,2.287134,0,0
+"nested, GroupKFold",towing_capacity_lb,Linear regression,0,0,0,0.4981809,0.454015,256.0276,174.0974,14.67096,13.31469,0,0
+"nested, GroupKFold",towing_capacity_lb,Linear regression,1,1,1,-0.7639554,-2.354039,480.0174,327.3333,28.58053,16.30516,0,0
+"nested, GroupKFold",towing_capacity_lb,Linear regression,2,2,2,-1.175268,-2.719179,533.052,434.2742,36.83208,14.84546,0,0
+"nested, GroupKFold",towing_capacity_lb,Linear regression,3,3,3,-0.2008269,-1.316781,396.053,294.8134,22.70837,15.6614,0,0
+"nested, GroupKFold",towing_capacity_lb,Linear regression,4,4,4,-0.2532906,-0.03042601,404.6123,303.8791,25.04926,15.42716,0,0
+"nested, GroupKFold",towing_capacity_lb,Lasso,0,0,0,0.09550668,0.06005591,343.7287,285.0105,22.29223,14.93128,0,0
+"nested, GroupKFold",towing_capacity_lb,Lasso,1,1,1,-0.8537258,-2.0189,492.0802,373.742,30.16539,15.94378,0,0
+"nested, GroupKFold",towing_capacity_lb,Lasso,2,2,2,-0.9082755,-2.231197,499.2679,416.7429,35.47283,17.05851,0,0
+"nested, GroupKFold",towing_capacity_lb,Lasso,3,3,3,-0.302447,-1.39294,412.4708,328.5463,24.86921,13.68614,0,0
+"nested, GroupKFold",towing_capacity_lb,Lasso,4,4,4,-0.03231631,-0.06026786,367.2143,300.3309,23.07371,12.66891,0,0
+"nested, GroupKFold",towing_capacity_lb,kNN,0,0,0,-0.9807023,-0.7329509,508.6543,411.5184,33.18277,15.54364,0,0
+"nested, GroupKFold",towing_capacity_lb,kNN,1,1,1,-0.5124137,-2.09404,444.4761,363.6726,28.81753,16.03171,0,0
+"nested, GroupKFold",towing_capacity_lb,kNN,2,2,2,-1.34881,-5.302705,553.9073,445.1389,36.01446,13.76468,0,0
+"nested, GroupKFold",towing_capacity_lb,kNN,3,3,3,-1.362053,-1.457309,555.4666,439.4378,35.50158,17.65665,0,0
+"nested, GroupKFold",towing_capacity_lb,kNN,4,4,4,-0.07567773,-0.1411405,374.8472,290.8482,22.31027,16.98044,0,0
+"nested, GroupKFold",towing_capacity_lb,SVR,0,0,0,-0.7391064,-1.040803,476.6243,379.9184,31.85865,14.35337,0,0
+"nested, GroupKFold",towing_capacity_lb,SVR,1,1,1,-0.4428344,-4.261447,434.1316,348.4429,30.69551,15.84005,0,0
+"nested, GroupKFold",towing_capacity_lb,SVR,2,2,2,-0.8730106,-2.197113,494.6332,380.7859,32.19734,16.37954,0,0
+"nested, GroupKFold",towing_capacity_lb,SVR,3,3,3,-0.2188656,-1.621447,399.0167,254.6468,16.60226,14.67281,0,0
+"nested, GroupKFold",towing_capacity_lb,SVR,4,4,4,-0.8286432,-1.837021,488.7397,369.2943,27.29599,13.29258,0,0
+"nested, GroupKFold",towing_capacity_lb,Mean,0,0,0,-0.06962334,-0.06936475,373.7908,306.3358,23.65002,0.1422675,0,0
+"nested, GroupKFold",towing_capacity_lb,Mean,1,1,1,-0.01579559,-0.2201749,364.2641,292.1691,22.42433,0.1492905,0,0
+"nested, GroupKFold",towing_capacity_lb,Mean,2,2,2,-0.1590018,-0.6316865,389.0946,312.5245,24.08023,0.1674282,0,0
+"nested, GroupKFold",towing_capacity_lb,Mean,3,3,3,-0.3552828,-1.39294,420.7539,348.4559,26.86017,0.1715048,0,0
+"nested, GroupKFold",towing_capacity_lb,Mean,4,4,4,-0.03231631,-0.06026786,367.2143,300.3309,23.07371,0.2034402,0,0
+"nested, GroupKFold",towing_capacity_lb,Ridge (all features),0,0,0,-0.2197532,-0.1713092,399.162,325.5977,25.673,2.303302,0,0
+"nested, GroupKFold",towing_capacity_lb,Ridge (all features),1,1,1,-0.3640829,-1.840196,422.1177,281.4748,24.56938,2.289628,0,0
+"nested, GroupKFold",towing_capacity_lb,Ridge (all features),2,2,2,-1.546775,-10.15753,576.7777,468.3647,41.76149,2.177813,0,0
+"nested, GroupKFold",towing_capacity_lb,Ridge (all features),3,3,3,-0.4450316,-1.481363,434.462,337.2644,25.41381,2.211525,0,0
+"nested, GroupKFold",towing_capacity_lb,Ridge (all features),4,4,4,-0.2248061,-0.4012934,399.9879,345.9341,27.00022,2.264667,0,0
+"nested, GroupKFold",towing_capacity_lb,Lasso (no SFS),0,0,0,0.0978984,0.06193042,343.274,278.3438,21.55398,2.220611,0,0
+"nested, GroupKFold",towing_capacity_lb,Lasso (no SFS),1,1,1,-0.8527682,-2.070554,491.9531,365.1553,29.30814,2.295843,0,0
+"nested, GroupKFold",towing_capacity_lb,Lasso (no SFS),2,2,2,-1.874431,-10.36184,612.7582,505.0491,44.61973,2.529733,0,0
+"nested, GroupKFold",towing_capacity_lb,Lasso (no SFS),3,3,3,-0.3018933,-1.40925,412.3831,327.1167,24.68763,2.470404,0,0
+"nested, GroupKFold",towing_capacity_lb,Lasso (no SFS),4,4,4,-0.03231631,-0.06026786,367.2143,300.3309,23.07371,2.450035,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Linear regression,0,0,0,-0.1577814,-3.144503,2.249985,1.821215,7.447872,11.03368,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Linear regression,1,1,1,-0.08102927,-0.4998049,2.174128,1.802066,7.357118,12.9406,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Linear regression,2,2,2,0.1195143,-0.4627367,1.962129,1.715093,6.958989,10.33573,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Linear regression,3,3,3,-0.1304373,-1.015995,2.223256,1.854392,7.640306,11.7466,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Linear regression,4,4,4,0.173098,0.05717936,1.901487,1.637622,6.685372,10.18832,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Lasso,0,0,0,0.1834869,-2.066544,1.889504,1.653372,6.736147,11.83741,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Lasso,1,1,1,-0.06868101,-0.4858797,2.161675,1.841021,7.579912,11.93914,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Lasso,2,2,2,0.2329709,-0.08914669,1.831354,1.574835,6.392243,14.44124,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Lasso,3,3,3,-0.07545954,-0.8655507,2.16852,1.849216,7.568253,12.75388,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Lasso,4,4,4,0.2992502,0.2616255,1.750442,1.508875,6.15297,12.47406,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,kNN,0,0,0,0.1121294,-3.970604,1.97034,1.743348,7.082991,18.98903,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,kNN,1,1,1,0.2842993,-0.01445397,1.769017,1.403084,5.741293,16.86462,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,kNN,2,2,2,0.07520704,-0.8110237,2.010891,1.581423,6.427381,14.76202,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,kNN,3,3,3,0.1154069,-0.697393,1.9667,1.64017,6.686736,15.48117,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,kNN,4,4,4,0.3940923,0.2169172,1.627682,1.307885,5.344555,14.94033,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,SVR,0,0,0,-0.08052959,-4.916226,2.173625,1.869808,7.604186,15.10572,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,SVR,1,1,1,-0.1769275,-0.6112741,2.268513,1.906693,7.765922,15.74579,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,SVR,2,2,2,0.04851959,-0.3395109,2.0397,1.680341,6.801349,15.07871,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,SVR,3,3,3,-0.4645246,-1.544766,2.530548,2.138397,8.760362,15.90765,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,SVR,4,4,4,0.02415873,-0.01171215,2.065646,1.683294,6.790708,14.70597,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Mean,0,0,0,-0.1052641,-4.796932,2.198363,1.832132,7.482225,0.1737572,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Mean,1,1,1,-0.1468016,-0.5524389,2.239291,1.829038,7.48041,0.2184112,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Mean,2,2,2,-0.1643612,-0.5375175,2.256369,1.805692,7.368639,0.1599813,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Mean,3,3,3,-0.1413716,-1.262697,2.233983,1.825342,7.475495,0.2054245,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Mean,4,4,4,-0.01997016,-0.06867231,2.111835,1.722287,7.049659,0.2130798,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Ridge (all features),0,0,0,0.006109264,-3.171836,2.084662,1.792539,7.346371,2.401572,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Ridge (all features),1,1,1,0.1391934,-0.1698404,1.940078,1.599183,6.545691,2.57952,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Ridge (all features),2,2,2,0.02452677,-0.6883548,2.065257,1.749072,7.109269,2.619779,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Ridge (all features),3,3,3,-0.04634711,-0.983018,2.138968,1.847848,7.606945,4.081079,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Ridge (all features),4,4,4,0.1502908,0.1165374,1.927532,1.60583,6.552576,4.165308,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Lasso (no SFS),0,0,0,0.1830982,-2.071642,1.889954,1.63807,6.676084,3.92167,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Lasso (no SFS),1,1,1,-0.1219808,-0.56041,2.214925,1.881474,7.75363,4.289368,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Lasso (no SFS),2,2,2,0.1724912,-0.2683268,1.902185,1.616543,6.554409,2.682216,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Lasso (no SFS),3,3,3,-0.07912281,-0.8912773,2.17221,1.849676,7.571355,2.571999,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Lasso (no SFS),4,4,4,0.266047,0.2368025,1.791433,1.546169,6.338173,2.717861,0,0
+"nested, GroupKFold",acceleration_0_60_s,Linear regression,0,0,0,0.3387363,0.1766406,1.015915,0.8302542,9.360649,14.43863,0,0
+"nested, GroupKFold",acceleration_0_60_s,Linear regression,1,1,1,0.1376598,-0.1089177,1.160137,0.9352872,10.57864,15.64226,0,0
+"nested, GroupKFold",acceleration_0_60_s,Linear regression,2,2,2,0.07531196,-0.8113111,1.201344,0.978145,11.03713,15.87562,0,0
+"nested, GroupKFold",acceleration_0_60_s,Linear regression,3,3,3,0.2238827,0.06082304,1.10061,0.8698564,9.846269,16.17478,0,0
+"nested, GroupKFold",acceleration_0_60_s,Linear regression,4,4,4,-0.04879113,-1.804029,1.279424,1.075472,12.02364,16.12652,0,0
+"nested, GroupKFold",acceleration_0_60_s,Lasso,0,0,0,0.403303,0.3016683,0.9650434,0.758827,8.643715,15.3529,0,0
+"nested, GroupKFold",acceleration_0_60_s,Lasso,1,1,1,0.3413808,0.1694942,1.013881,0.8287948,9.570407,17.45807,0,0
+"nested, GroupKFold",acceleration_0_60_s,Lasso,2,2,2,0.2012307,-0.204525,1.116556,0.8991482,10.08274,19.44915,0,0
+"nested, GroupKFold",acceleration_0_60_s,Lasso,3,3,3,0.3257971,0.1977548,1.025806,0.7742883,8.829344,15.33036,0,0
+"nested, GroupKFold",acceleration_0_60_s,Lasso,4,4,4,0.06513605,-1.245736,1.207936,0.9599247,10.89144,15.92828,0,0
+"nested, GroupKFold",acceleration_0_60_s,kNN,0,0,0,0.4205492,0.3203591,0.9509949,0.6957258,8.145208,18.20593,0,0
+"nested, GroupKFold",acceleration_0_60_s,kNN,1,1,1,0.3848984,0.200203,0.9798133,0.7831102,8.954764,19.12878,0,0
+"nested, GroupKFold",acceleration_0_60_s,kNN,2,2,2,-0.01224181,-0.7476007,1.256933,0.9990712,11.36613,18.2457,0,0
+"nested, GroupKFold",acceleration_0_60_s,kNN,3,3,3,0.3164528,0.1893861,1.03289,0.742765,8.623891,17.13388,0,0
+"nested, GroupKFold",acceleration_0_60_s,kNN,4,4,4,0.04605866,-1.349709,1.220199,0.9099597,10.49052,18.18284,0,0
+"nested, GroupKFold",acceleration_0_60_s,SVR,0,0,0,0.3312481,0.1754444,1.021651,0.8199157,9.250353,13.91624,0,0
+"nested, GroupKFold",acceleration_0_60_s,SVR,1,1,1,0.4138752,0.286497,0.9564559,0.7699486,8.930476,15.5397,0,0
+"nested, GroupKFold",acceleration_0_60_s,SVR,2,2,2,0.2168773,-0.1436212,1.105566,0.8472148,9.523028,14.41581,0,0
+"nested, GroupKFold",acceleration_0_60_s,SVR,3,3,3,0.2748079,0.264829,1.063889,0.8815476,9.994583,14.22386,0,0
+"nested, GroupKFold",acceleration_0_60_s,SVR,4,4,4,0.1311207,-1.293617,1.164527,0.9581744,10.9486,13.46577,0,0
+"nested, GroupKFold",acceleration_0_60_s,Mean,0,0,0,-0.04430655,-0.1603014,1.276685,1.052509,12.03245,0.1920888,0,0
+"nested, GroupKFold",acceleration_0_60_s,Mean,1,1,1,-0.07354394,-0.3715326,1.294434,1.032979,11.83863,0.1694384,0,0
+"nested, GroupKFold",acceleration_0_60_s,Mean,2,2,2,-0.03889561,-0.3216213,1.273374,1.037692,11.85709,0.1794938,0,0
+"nested, GroupKFold",acceleration_0_60_s,Mean,3,3,3,-0.04252806,-0.1185158,1.275598,1.041533,11.876,0.1854887,0,0
+"nested, GroupKFold",acceleration_0_60_s,Mean,4,4,4,-0.08539403,-1.303236,1.301558,1.058218,12.11064,0.1811669,0,0
+"nested, GroupKFold",acceleration_0_60_s,Ridge (all features),0,0,0,0.4470601,0.3522236,0.9289854,0.717842,8.194606,2.270172,0,0
+"nested, GroupKFold",acceleration_0_60_s,Ridge (all features),1,1,1,0.4294245,0.312764,0.9436837,0.7493658,8.585771,2.347124,0,0
+"nested, GroupKFold",acceleration_0_60_s,Ridge (all features),2,2,2,0.440878,-0.05104773,0.9341641,0.731029,8.283773,3.205167,0,0
+"nested, GroupKFold",acceleration_0_60_s,Ridge (all features),3,3,3,0.4916734,0.4335658,0.8907202,0.6932156,7.861749,3.18816,0,0
+"nested, GroupKFold",acceleration_0_60_s,Ridge (all features),4,4,4,0.1843854,-1.010844,1.128268,0.9371828,10.59244,3.431176,0,0
+"nested, GroupKFold",acceleration_0_60_s,Lasso (no SFS),0,0,0,0.4387798,0.3412074,0.9359153,0.7561383,8.555977,2.804316,0,0
+"nested, GroupKFold",acceleration_0_60_s,Lasso (no SFS),1,1,1,0.4446735,0.3240457,0.9309881,0.7815953,9.010736,2.740422,0,0
+"nested, GroupKFold",acceleration_0_60_s,Lasso (no SFS),2,2,2,0.317239,-0.07297954,1.032296,0.7976853,9.046174,2.734162,0,0
+"nested, GroupKFold",acceleration_0_60_s,Lasso (no SFS),3,3,3,0.4508057,0.3483766,0.9258336,0.7326567,8.411719,2.43529,0,0
+"nested, GroupKFold",acceleration_0_60_s,Lasso (no SFS),4,4,4,0.1664923,-0.9978968,1.140577,0.919437,10.48126,1.768059,0,0
+"nested, GroupKFold",passenger_volume_cuft,Complete procedure,0,0,0,0.4149347,-1.424615,4.31095,3.713224,3.80894,71.8313,0,0
+"nested, GroupKFold",passenger_volume_cuft,Complete procedure,1,1,1,0.4886789,-1.028725,4.030117,3.274824,3.40933,74.453,0,0
+"nested, GroupKFold",passenger_volume_cuft,Complete procedure,2,2,2,0.3127484,0.1265439,4.672279,3.569684,3.754047,77.20476,0,0
+"nested, GroupKFold",passenger_volume_cuft,Complete procedure,3,3,3,0.3421609,-14.05483,4.571205,3.76879,3.93763,71.99242,0,0
+"nested, GroupKFold",passenger_volume_cuft,Complete procedure,4,4,4,0.2235046,-0.3688535,4.966384,3.817619,3.929617,74.17559,0,0
+"nested, GroupKFold",cargo_volume_cuft,Complete procedure,0,0,0,0.4400025,0.05076133,1.188599,0.9350958,6.190027,68.33411,0,0
+"nested, GroupKFold",cargo_volume_cuft,Complete procedure,1,1,1,0.2750909,-0.1430127,1.352334,0.9979493,6.284969,69.94548,0,0
+"nested, GroupKFold",cargo_volume_cuft,Complete procedure,2,2,2,0.5733125,0.2680843,1.037522,0.7957893,5.180705,67.81408,0,0
+"nested, GroupKFold",cargo_volume_cuft,Complete procedure,3,3,3,0.4502977,0.03085063,1.177622,0.8394896,5.336223,62.57826,0,0
+"nested, GroupKFold",cargo_volume_cuft,Complete procedure,4,4,4,0.6353168,0.6197408,0.95918,0.7011694,4.459525,62.88952,0,0
+"nested, GroupKFold",towing_capacity_lb,Complete procedure,0,0,0,-0.4698279,-0.8178978,438.1738,314.6059,27.04475,58.45769,0,0
+"nested, GroupKFold",towing_capacity_lb,Complete procedure,1,1,1,0.005136425,-0.512009,360.4914,246.8602,20.52411,63.97392,0,0
+"nested, GroupKFold",towing_capacity_lb,Complete procedure,2,2,2,-0.7593317,-4.745778,479.3878,372.4971,30.69349,63.7633,0,0
+"nested, GroupKFold",towing_capacity_lb,Complete procedure,3,3,3,-0.6162749,-1.674507,459.4844,340.912,25.26881,62.62199,0,0
+"nested, GroupKFold",towing_capacity_lb,Complete procedure,4,4,4,-0.1928168,0.0117041,394.7299,295.5013,24.41694,61.45997,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Complete procedure,0,0,0,-0.3482266,-4.556401,2.427995,2.044768,8.345256,59.71608,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Complete procedure,1,1,1,0.1735298,-0.1212686,1.90099,1.510712,6.151224,59.58213,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Complete procedure,2,2,2,-0.1074811,-0.9364064,2.200566,1.778951,7.266662,58.36187,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Complete procedure,3,3,3,-0.2658743,-1.190599,2.352673,2.031558,8.382325,57.12302,0,0
+"nested, GroupKFold",fuel_efficiency_mpg,Complete procedure,4,4,4,0.159795,0.0357919,1.916721,1.627443,6.612873,55.59743,0,0
+"nested, GroupKFold",acceleration_0_60_s,Complete procedure,0,0,0,0.4055031,0.2415685,0.9632626,0.7782551,8.969293,57.43177,0,0
+"nested, GroupKFold",acceleration_0_60_s,Complete procedure,1,1,1,0.1662022,-0.0748544,1.140776,0.9683475,11.14261,62.02676,0,0
+"nested, GroupKFold",acceleration_0_60_s,Complete procedure,2,2,2,0.2025537,-0.1713576,1.115631,0.8662035,9.75336,62.27964,0,0
+"nested, GroupKFold",acceleration_0_60_s,Complete procedure,3,3,3,0.2749981,0.1156371,1.06375,0.8367077,9.577147,62.89731,0,0
+"nested, GroupKFold",acceleration_0_60_s,Complete procedure,4,4,4,0.08686633,-1.415305,1.193815,1.009587,11.31022,35.57822,0,0
+"nested, random KFold",passenger_volume_cuft,Linear regression,0,0,0,0.4804188,-1.011891,4.062539,3.273597,3.389043,16.91125,0,0
+"nested, random KFold",passenger_volume_cuft,Linear regression,1,1,1,0.5928491,0.2825494,3.596239,3.097512,3.162829,16.55833,0,0
+"nested, random KFold",passenger_volume_cuft,Linear regression,2,2,2,0.5366343,0.2853443,3.836479,3.326015,3.400233,16.91496,0,0
+"nested, random KFold",passenger_volume_cuft,Linear regression,3,3,3,0.6340992,0.4939143,3.4092,2.77609,2.849625,19.85884,0,0
+"nested, random KFold",passenger_volume_cuft,Linear regression,4,4,4,0.6531784,0.5824942,3.319127,2.732006,2.788376,17.26452,0,0
+"nested, random KFold",passenger_volume_cuft,Lasso,0,0,0,0.4875967,-0.5606001,4.03438,3.29974,3.43114,19.87615,0,0
+"nested, random KFold",passenger_volume_cuft,Lasso,1,1,1,0.5580635,0.284555,3.746716,3.209092,3.308476,20.87244,0,0
+"nested, random KFold",passenger_volume_cuft,Lasso,2,2,2,0.5883949,0.428822,3.615857,3.13381,3.221317,19.93056,0,0
+"nested, random KFold",passenger_volume_cuft,Lasso,3,3,3,0.6808159,0.5013031,3.184135,2.75738,2.850578,19.15495,0,0
+"nested, random KFold",passenger_volume_cuft,Lasso,4,4,4,0.6392478,0.553282,3.38513,2.767194,2.847978,16.22752,0,0
+"nested, random KFold",passenger_volume_cuft,kNN,0,0,0,0.6228678,0.3327685,3.461128,2.732077,2.821961,18.88109,0,0
+"nested, random KFold",passenger_volume_cuft,kNN,1,1,1,0.5681621,0.4054249,3.703661,2.868645,2.991224,18.68095,0,0
+"nested, random KFold",passenger_volume_cuft,kNN,2,2,2,0.615258,0.4774338,3.495873,2.522308,2.61605,14.63665,0,0
+"nested, random KFold",passenger_volume_cuft,kNN,3,3,3,0.437952,0.3194911,4.2253,3.328344,3.513362,16.26411,0,0
+"nested, random KFold",passenger_volume_cuft,kNN,4,4,4,0.5669318,0.5176098,3.708933,2.81788,2.913787,16.94327,0,0
+"nested, random KFold",passenger_volume_cuft,SVR,0,0,0,0.3366751,-1.728065,4.590225,3.586658,3.73977,18.12138,0,0
+"nested, random KFold",passenger_volume_cuft,SVR,1,1,1,0.6484432,0.4163712,3.341709,2.811919,2.908642,17.28083,0,0
+"nested, random KFold",passenger_volume_cuft,SVR,2,2,2,0.6075133,0.5420916,3.530883,2.778897,2.905688,16.14687,0,0
+"nested, random KFold",passenger_volume_cuft,SVR,3,3,3,0.4785152,0.4174082,4.069974,3.337972,3.484421,17.11694,0,0
+"nested, random KFold",passenger_volume_cuft,SVR,4,4,4,0.5683153,0.5774667,3.703004,2.790102,2.944537,17.23394,0,0
+"nested, random KFold",passenger_volume_cuft,Mean,0,0,0,-0.1376862,-2.610442,6.011489,4.979505,5.173942,0.2229304,0,0
+"nested, random KFold",passenger_volume_cuft,Mean,1,1,1,-0.05770182,-0.2450003,5.796321,4.627887,4.818886,0.2141397,0,0
+"nested, random KFold",passenger_volume_cuft,Mean,2,2,2,-0.03137148,-0.2205046,5.72372,4.597645,4.790028,0.220255,0,0
+"nested, random KFold",passenger_volume_cuft,Mean,3,3,3,-0.06785003,-0.4071219,5.824062,4.760129,4.95281,0.2645415,0,0
+"nested, random KFold",passenger_volume_cuft,Mean,4,4,4,-0.04956404,-0.2882836,5.77398,4.632118,4.825823,0.2910665,0,0
+"nested, random KFold",passenger_volume_cuft,Ridge (all features),0,0,0,0.7118179,0.1725187,3.02555,2.631593,2.717892,3.184028,0,0
+"nested, random KFold",passenger_volume_cuft,Ridge (all features),1,1,1,0.5722746,0.2739136,3.685983,3.274949,3.365138,3.19397,0,0
+"nested, random KFold",passenger_volume_cuft,Ridge (all features),2,2,2,0.6071004,0.4591453,3.53274,3.132545,3.203176,3.102602,0,0
+"nested, random KFold",passenger_volume_cuft,Ridge (all features),3,3,3,0.6884511,0.5393852,3.14582,2.876358,2.932462,2.71262,0,0
+"nested, random KFold",passenger_volume_cuft,Ridge (all features),4,4,4,0.6751298,0.5852288,3.212372,2.746674,2.82794,2.706665,0,0
+"nested, random KFold",passenger_volume_cuft,Lasso (no SFS),0,0,0,0.6251502,-0.3371667,3.450638,2.939027,3.031667,2.944607,0,0
+"nested, random KFold",passenger_volume_cuft,Lasso (no SFS),1,1,1,0.5470143,0.2539664,3.793264,3.338349,3.429321,2.539921,0,0
+"nested, random KFold",passenger_volume_cuft,Lasso (no SFS),2,2,2,0.5893337,0.4335716,3.611731,3.158909,3.254851,2.975239,0,0
+"nested, random KFold",passenger_volume_cuft,Lasso (no SFS),3,3,3,0.6725456,0.4876432,3.225123,2.999103,3.070579,2.939573,0,0
+"nested, random KFold",passenger_volume_cuft,Lasso (no SFS),4,4,4,0.6709652,0.5751003,3.232896,2.682927,2.765179,3.041179,0,0
+"nested, random KFold",cargo_volume_cuft,Linear regression,0,0,0,0.4494735,-0.3728448,1.178505,0.9246256,5.950937,14.68636,0,0
+"nested, random KFold",cargo_volume_cuft,Linear regression,1,1,1,0.6957236,0.6199732,0.8761457,0.6964116,4.523905,13.39025,0,0
+"nested, random KFold",cargo_volume_cuft,Linear regression,2,2,2,0.6630029,0.4816604,0.9220519,0.7264125,4.745302,13.71079,0,0
+"nested, random KFold",cargo_volume_cuft,Linear regression,3,3,3,0.6010201,0.4714937,1.00327,0.8116501,5.265746,11.56214,0,0
+"nested, random KFold",cargo_volume_cuft,Linear regression,4,4,4,0.6356606,0.4394424,0.9587277,0.7421254,4.832995,12.92924,0,0
+"nested, random KFold",cargo_volume_cuft,Lasso,0,0,0,0.4908167,-0.1886951,1.13339,0.8792314,5.630513,15.72736,0,0
+"nested, random KFold",cargo_volume_cuft,Lasso,1,1,1,0.6685275,0.5490529,0.9144627,0.7479137,4.846164,14.57112,0,0
+"nested, random KFold",cargo_volume_cuft,Lasso,2,2,2,0.678913,0.537453,0.9000229,0.6908908,4.477971,14.8534,0,0
+"nested, random KFold",cargo_volume_cuft,Lasso,3,3,3,0.6968731,0.5605522,0.8744893,0.7151211,4.612297,14.28209,0,0
+"nested, random KFold",cargo_volume_cuft,Lasso,4,4,4,0.7071322,0.5221471,0.8595636,0.668577,4.317444,15.48879,0,0
+"nested, random KFold",cargo_volume_cuft,kNN,0,0,0,0.480433,0.3450217,1.144888,0.8804958,5.648619,18.97167,0,0
+"nested, random KFold",cargo_volume_cuft,kNN,1,1,1,0.3353456,0.2381372,1.294912,1.065045,6.751856,17.61931,0,0
+"nested, random KFold",cargo_volume_cuft,kNN,2,2,2,0.4010222,0.2059688,1.229271,0.9989009,6.397136,19.00851,0,0
+"nested, random KFold",cargo_volume_cuft,kNN,3,3,3,0.358182,0.0998889,1.272472,1.0079,6.448355,18.1618,0,0
+"nested, random KFold",cargo_volume_cuft,kNN,4,4,4,0.3890762,0.2201293,1.241469,0.9831808,6.252268,18.25725,0,0
+"nested, random KFold",cargo_volume_cuft,SVR,0,0,0,0.4051929,-0.2526331,1.224984,1.028149,6.580654,16.44357,0,0
+"nested, random KFold",cargo_volume_cuft,SVR,1,1,1,0.5932056,0.4885809,1.013047,0.8475372,5.459546,16.56067,0,0
+"nested, random KFold",cargo_volume_cuft,SVR,2,2,2,0.4858211,0.313892,1.138936,0.9163941,5.827307,18.13324,0,0
+"nested, random KFold",cargo_volume_cuft,SVR,3,3,3,0.6092694,0.3706641,0.9928439,0.7988928,5.10219,20.31151,0,0
+"nested, random KFold",cargo_volume_cuft,SVR,4,4,4,0.5384613,0.2396604,1.079062,0.8751774,5.653022,16.7167,0,0
+"nested, random KFold",cargo_volume_cuft,Mean,0,0,0,-0.05893828,-0.4587573,1.634472,1.37672,8.950079,0.1841805,0,0
+"nested, random KFold",cargo_volume_cuft,Mean,1,1,1,-0.03288562,-0.09278378,1.614241,1.354435,8.808928,0.2281026,0,0
+"nested, random KFold",cargo_volume_cuft,Mean,2,2,2,-0.08225219,-0.2438296,1.652367,1.373694,8.937737,0.1868449,0,0
+"nested, random KFold",cargo_volume_cuft,Mean,3,3,3,-0.08750332,-0.3688845,1.656371,1.376409,8.958633,0.1806538,0,0
+"nested, random KFold",cargo_volume_cuft,Mean,4,4,4,-0.07653264,-0.2502152,1.647995,1.381634,8.996456,0.1485821,0,0
+"nested, random KFold",cargo_volume_cuft,Ridge (all features),0,0,0,0.4900777,0.02184977,1.134212,1.013909,6.5677,2.967183,0,0
+"nested, random KFold",cargo_volume_cuft,Ridge (all features),1,1,1,0.5455455,0.3892783,1.070748,0.9153135,5.897449,2.887929,0,0
+"nested, random KFold",cargo_volume_cuft,Ridge (all features),2,2,2,0.6103285,0.4183639,0.9914973,0.8036796,5.232072,2.848936,0,0
+"nested, random KFold",cargo_volume_cuft,Ridge (all features),3,3,3,0.6143054,0.450889,0.9864248,0.7999686,5.164705,2.620089,0,0
+"nested, random KFold",cargo_volume_cuft,Ridge (all features),4,4,4,0.4229827,0.159169,1.206526,1.012664,6.602407,2.699286,0,0
+"nested, random KFold",cargo_volume_cuft,Lasso (no SFS),0,0,0,0.6015108,0.2420823,1.002653,0.8178958,5.261939,2.725436,0,0
+"nested, random KFold",cargo_volume_cuft,Lasso (no SFS),1,1,1,0.6484476,0.5169244,0.9417535,0.7632415,4.953133,2.937034,0,0
+"nested, random KFold",cargo_volume_cuft,Lasso (no SFS),2,2,2,0.6629676,0.5181916,0.9221,0.7166825,4.681887,2.732423,0,0
+"nested, random KFold",cargo_volume_cuft,Lasso (no SFS),3,3,3,0.6438716,0.493184,0.9478629,0.7723807,5.014988,2.893042,0,0
+"nested, random KFold",cargo_volume_cuft,Lasso (no SFS),4,4,4,0.6481791,0.4537625,0.9421131,0.7308189,4.703986,2.687103,0,0
+"nested, random KFold",towing_capacity_lb,Linear regression,0,0,0,-0.1041726,-0.6355748,379.7796,296.1151,25.40764,15.11445,0,0
+"nested, random KFold",towing_capacity_lb,Linear regression,1,1,1,-0.5987204,-11.01505,456.9823,326.6389,28.39228,14.8353,0,0
+"nested, random KFold",towing_capacity_lb,Linear regression,2,2,2,0.4285887,0.2136049,273.2043,194.5246,16.20353,16.3552,0,0
+"nested, random KFold",towing_capacity_lb,Linear regression,3,3,3,0.163323,-0.09445202,330.5918,257.7422,20.24555,13.64777,0,0
+"nested, random KFold",towing_capacity_lb,Linear regression,4,4,4,0.1895106,0.2338029,325.377,218.8544,18.26318,15.01784,0,0
+"nested, random KFold",towing_capacity_lb,Lasso,0,0,0,0.08025973,-0.8158052,346.6137,278.3344,23.52083,17.82037,0,0
+"nested, random KFold",towing_capacity_lb,Lasso,1,1,1,-1.105307,-14.56546,524.4098,354.5142,29.54343,16.72898,0,0
+"nested, random KFold",towing_capacity_lb,Lasso,2,2,2,0.4802789,0.1392057,260.5544,173.3519,15.23702,21.0649,0,0
+"nested, random KFold",towing_capacity_lb,Lasso,3,3,3,-0.173389,-0.915099,391.5022,324.5934,26.77832,17.78095,0,0
+"nested, random KFold",towing_capacity_lb,Lasso,4,4,4,0.1735389,0.2717143,328.5673,217.6365,15.82769,17.09503,0,0
+"nested, random KFold",towing_capacity_lb,kNN,0,0,0,-0.4688387,-1.335171,438.0263,288.7438,21.87827,17.7379,0,0
+"nested, random KFold",towing_capacity_lb,kNN,1,1,1,-0.3951697,-3.614004,426.9005,275.8894,21.47538,20.16526,0,0
+"nested, random KFold",towing_capacity_lb,kNN,2,2,2,-0.5066402,-0.4553029,443.627,322.1103,24.38576,20.98399,0,0
+"nested, random KFold",towing_capacity_lb,kNN,3,3,3,-0.9126557,-0.5463585,499.8406,357.0973,28.00053,21.06967,0,0
+"nested, random KFold",towing_capacity_lb,kNN,4,4,4,-0.869313,-0.4827194,494.1447,371.6274,29.11149,20.06519,0,0
+"nested, random KFold",towing_capacity_lb,SVR,0,0,0,-0.7115309,-1.889672,472.8305,353.4846,29.89561,19.18021,0,0
+"nested, random KFold",towing_capacity_lb,SVR,1,1,1,-1.118301,-14.46764,526.0257,330.5759,26.63119,18.27889,0,0
+"nested, random KFold",towing_capacity_lb,SVR,2,2,2,0.2151722,-0.3017599,320.1845,193.8157,14.74793,17.09839,0,0
+"nested, random KFold",towing_capacity_lb,SVR,3,3,3,-0.4990074,-1.453523,442.5018,296.4191,22.66414,18.33005,0,0
+"nested, random KFold",towing_capacity_lb,SVR,4,4,4,-0.01503794,0.1683724,364.1282,236.6509,17.06674,18.05257,0,0
+"nested, random KFold",towing_capacity_lb,Mean,0,0,0,-0.05786483,-0.8270283,371.7305,300,23.02344,0.1500928,0,0
+"nested, random KFold",towing_capacity_lb,Mean,1,1,1,-0.05786483,-0.8270283,371.7305,300,23.02344,0.1826663,0,0
+"nested, random KFold",towing_capacity_lb,Mean,2,2,2,-0.09150718,-0.1586174,377.5952,309.375,23.85938,0.1702835,0,0
+"nested, random KFold",towing_capacity_lb,Mean,3,3,3,-0.1655203,-0.326254,390.1873,317.1875,24.4401,0.2132157,0,0
+"nested, random KFold",towing_capacity_lb,Mean,4,4,4,-0.1789773,-0.9685789,392.4333,317.1875,24.3724,0.2105397,0,0
+"nested, random KFold",towing_capacity_lb,Ridge (all features),0,0,0,0.5635435,0.2182549,238.7721,170.2807,14.48692,2.572388,0,0
+"nested, random KFold",towing_capacity_lb,Ridge (all features),1,1,1,-0.5282491,-8.584392,446.797,325.2911,26.89547,2.371053,0,0
+"nested, random KFold",towing_capacity_lb,Ridge (all features),2,2,2,0.500585,-6.408163e-05,255.4136,170.5635,14.87431,2.38379,0,0
+"nested, random KFold",towing_capacity_lb,Ridge (all features),3,3,3,-0.163736,-0.8312203,389.8885,297.3206,23.96623,2.562543,0,0
+"nested, random KFold",towing_capacity_lb,Ridge (all features),4,4,4,-0.8092392,0.1373983,486.1398,340.427,28.03255,2.601996,0,0
+"nested, random KFold",towing_capacity_lb,Lasso (no SFS),0,0,0,0.3251966,-0.6762313,296.8943,216.2223,18.88513,2.54696,0,0
+"nested, random KFold",towing_capacity_lb,Lasso (no SFS),1,1,1,-0.5628412,-8.589896,451.8253,325.2228,26.6006,2.572686,0,0
+"nested, random KFold",towing_capacity_lb,Lasso (no SFS),2,2,2,0.4736346,-0.0897416,262.2146,170.1344,14.92157,2.578094,0,0
+"nested, random KFold",towing_capacity_lb,Lasso (no SFS),3,3,3,-0.1292789,-0.8153152,384.073,298.7,24.08428,2.647129,0,0
+"nested, random KFold",towing_capacity_lb,Lasso (no SFS),4,4,4,-0.6647761,0.1960329,466.3275,328.2201,26.81608,2.744465,0,0
+"nested, random KFold",fuel_efficiency_mpg,Linear regression,0,0,0,0.109011,-0.111653,1.973797,1.73568,7.002471,12.96834,0,0
+"nested, random KFold",fuel_efficiency_mpg,Linear regression,1,1,1,-0.09329716,-1.268738,2.186429,1.910868,7.898802,14.09015,0,0
+"nested, random KFold",fuel_efficiency_mpg,Linear regression,2,2,2,-0.002457136,-0.2658683,2.093627,1.82599,7.476664,11.186,0,0
+"nested, random KFold",fuel_efficiency_mpg,Linear regression,3,3,3,0.06710164,-0.2784347,2.019684,1.689113,6.873594,11.88324,0,0
+"nested, random KFold",fuel_efficiency_mpg,Linear regression,4,4,4,-0.05714633,-0.4550496,2.149977,1.814809,7.390686,12.71564,0,0
+"nested, random KFold",fuel_efficiency_mpg,Lasso,0,0,0,0.3349793,0.1609839,1.705234,1.480254,6.042911,12.53631,0,0
+"nested, random KFold",fuel_efficiency_mpg,Lasso,1,1,1,0.1223633,-0.7557156,1.958952,1.760144,7.304332,13.01207,0,0
+"nested, random KFold",fuel_efficiency_mpg,Lasso,2,2,2,0.1528303,-0.08009828,1.924649,1.6489,6.759669,12.37438,0,0
+"nested, random KFold",fuel_efficiency_mpg,Lasso,3,3,3,0.2042047,-0.03903354,1.865379,1.626813,6.658892,12.9745,0,0
+"nested, random KFold",fuel_efficiency_mpg,Lasso,4,4,4,0.08073132,-0.1447735,2.004876,1.691123,6.919261,13.31013,0,0
+"nested, random KFold",fuel_efficiency_mpg,kNN,0,0,0,0.2518457,0.02652833,1.808681,1.532136,6.298472,17.64054,0,0
+"nested, random KFold",fuel_efficiency_mpg,kNN,1,1,1,0.3371074,-0.2170086,1.702503,1.375212,5.659171,16.29457,0,0
+"nested, random KFold",fuel_efficiency_mpg,kNN,2,2,2,0.3443944,0.1333812,1.69312,1.373597,5.605316,17.42645,0,0
+"nested, random KFold",fuel_efficiency_mpg,kNN,3,3,3,-0.2360942,-0.4077255,2.324835,1.855275,7.411151,16.24322,0,0
+"nested, random KFold",fuel_efficiency_mpg,kNN,4,4,4,0.07812669,-0.210563,2.007714,1.532155,6.196449,17.18735,0,0
+"nested, random KFold",fuel_efficiency_mpg,SVR,0,0,0,0.1353249,-0.1271757,1.944432,1.602229,6.51493,17.38799,0,0
+"nested, random KFold",fuel_efficiency_mpg,SVR,1,1,1,-0.2387931,-0.9659359,2.327372,1.772794,7.196129,21.50865,0,0
+"nested, random KFold",fuel_efficiency_mpg,SVR,2,2,2,-0.06909962,-0.4281263,2.162098,1.847855,7.503464,20.35198,0,0
+"nested, random KFold",fuel_efficiency_mpg,SVR,3,3,3,0.1547793,0.01525135,1.922434,1.492752,6.017988,19.21239,0,0
+"nested, random KFold",fuel_efficiency_mpg,SVR,4,4,4,-0.2848365,-0.7614107,2.370229,1.880898,7.551362,21.09285,0,0
+"nested, random KFold",fuel_efficiency_mpg,Mean,0,0,0,-0.0661257,-0.328228,2.159089,1.777473,7.268381,0.2376903,0,0
+"nested, random KFold",fuel_efficiency_mpg,Mean,1,1,1,-0.05320977,-0.4515889,2.145971,1.75457,7.173591,0.450956,0,0
+"nested, random KFold",fuel_efficiency_mpg,Mean,2,2,2,-0.08752733,-0.2920981,2.180652,1.754677,7.169725,0.2588104,0,0
+"nested, random KFold",fuel_efficiency_mpg,Mean,3,3,3,-0.09656649,-0.4121179,2.189696,1.782742,7.280718,0.2009943,0,0
+"nested, random KFold",fuel_efficiency_mpg,Mean,4,4,4,-0.02829092,-0.07971589,2.120432,1.719516,7.034551,0.2580763,0,0
+"nested, random KFold",fuel_efficiency_mpg,Ridge (all features),0,0,0,0.04060993,-0.1085325,2.04816,1.694984,6.912528,6.756667,0,0
+"nested, random KFold",fuel_efficiency_mpg,Ridge (all features),1,1,1,0.0945704,-0.3326911,1.989728,1.707584,7.07143,6.829693,0,0
+"nested, random KFold",fuel_efficiency_mpg,Ridge (all features),2,2,2,0.1384117,-0.08991014,1.940958,1.65797,6.731161,6.449114,0,0
+"nested, random KFold",fuel_efficiency_mpg,Ridge (all features),3,3,3,0.2070207,0.03526221,1.862075,1.572247,6.441217,4.539905,0,0
+"nested, random KFold",fuel_efficiency_mpg,Ridge (all features),4,4,4,-0.04950507,-0.3347454,2.142193,1.739692,7.083788,2.848548,0,0
+"nested, random KFold",fuel_efficiency_mpg,Lasso (no SFS),0,0,0,0.2968301,0.1278118,1.753462,1.5198,6.197087,2.706849,0,0
+"nested, random KFold",fuel_efficiency_mpg,Lasso (no SFS),1,1,1,0.06435078,-0.813068,2.02266,1.795524,7.451372,2.625488,0,0
+"nested, random KFold",fuel_efficiency_mpg,Lasso (no SFS),2,2,2,0.1668842,-0.05761342,1.908618,1.619101,6.633603,2.747492,0,0
+"nested, random KFold",fuel_efficiency_mpg,Lasso (no SFS),3,3,3,0.2065249,-0.03581143,1.862657,1.615935,6.633005,3.072775,0,0
+"nested, random KFold",fuel_efficiency_mpg,Lasso (no SFS),4,4,4,-0.005169099,-0.2943473,2.096457,1.768263,7.222386,2.783184,0,0
+"nested, random KFold",acceleration_0_60_s,Linear regression,0,0,0,0.3692681,0.1040898,0.9921842,0.7123432,8.172228,12.28303,0,0
+"nested, random KFold",acceleration_0_60_s,Linear regression,1,1,1,0.2260954,0.1690458,1.09904,0.8711492,9.82163,10.70526,0,0
+"nested, random KFold",acceleration_0_60_s,Linear regression,2,2,2,0.3411827,0.2509797,1.014034,0.7983263,9.093026,11.83811,0,0
+"nested, random KFold",acceleration_0_60_s,Linear regression,3,3,3,0.3624547,0.1934731,0.9975288,0.8093698,9.060005,10.82504,0,0
+"nested, random KFold",acceleration_0_60_s,Linear regression,4,4,4,0.3025958,0.1637539,1.043307,0.8072843,9.200087,12.40838,0,0
+"nested, random KFold",acceleration_0_60_s,Lasso,0,0,0,0.36194,0.09085845,0.9979313,0.7283688,8.422821,12.37361,0,0
+"nested, random KFold",acceleration_0_60_s,Lasso,1,1,1,0.2690343,0.03958774,1.068116,0.7891015,9.083109,13.60541,0,0
+"nested, random KFold",acceleration_0_60_s,Lasso,2,2,2,0.3958732,0.3461358,0.9710329,0.7667289,8.743576,12.41636,0,0
+"nested, random KFold",acceleration_0_60_s,Lasso,3,3,3,0.3563426,0.2398656,1.002299,0.8182778,9.417783,12.64687,0,0
+"nested, random KFold",acceleration_0_60_s,Lasso,4,4,4,0.4018311,0.2878442,0.9662328,0.7710192,8.936168,11.65198,0,0
+"nested, random KFold",acceleration_0_60_s,kNN,0,0,0,0.409374,0.1153691,0.9601215,0.6953879,8.094512,16.11511,0,0
+"nested, random KFold",acceleration_0_60_s,kNN,1,1,1,0.1491082,-0.3212218,1.15241,0.952447,11.10233,14.03194,0,0
+"nested, random KFold",acceleration_0_60_s,kNN,2,2,2,0.2835499,0.1149667,1.057457,0.7882741,9.070075,13.73703,0,0
+"nested, random KFold",acceleration_0_60_s,kNN,3,3,3,0.2561687,0.06322178,1.077475,0.8281413,9.611496,13.80476,0,0
+"nested, random KFold",acceleration_0_60_s,kNN,4,4,4,0.2093905,0.09458604,1.110838,0.8231066,9.616346,13.60684,0,0
+"nested, random KFold",acceleration_0_60_s,SVR,0,0,0,0.3241852,-0.02401889,1.027031,0.7950353,9.235385,10.61645,0,0
+"nested, random KFold",acceleration_0_60_s,SVR,1,1,1,-0.1404462,-0.2960914,1.334158,1.104087,12.59058,13.29865,0,0
+"nested, random KFold",acceleration_0_60_s,SVR,2,2,2,0.3802283,0.3379793,0.9835258,0.7155319,8.257773,12.95212,0,0
+"nested, random KFold",acceleration_0_60_s,SVR,3,3,3,0.2623381,0.09728736,1.072997,0.839694,9.596362,12.09809,0,0
+"nested, random KFold",acceleration_0_60_s,SVR,4,4,4,0.3204723,0.1589206,1.029849,0.8062786,9.211302,10.84358,0,0
+"nested, random KFold",acceleration_0_60_s,Mean,0,0,0,-0.1627114,-0.7090969,1.347119,1.074933,12.3064,0.1559186,0,0
+"nested, random KFold",acceleration_0_60_s,Mean,1,1,1,-0.01439197,-0.04189102,1.258267,1.010996,11.57815,0.157444,0,0
+"nested, random KFold",acceleration_0_60_s,Mean,2,2,2,-0.08880851,-0.2655178,1.303604,1.059253,12.1208,0.1714028,0,0
+"nested, random KFold",acceleration_0_60_s,Mean,3,3,3,-0.0900715,-0.3871742,1.30436,1.061274,12.15273,0.1403825,0,0
+"nested, random KFold",acceleration_0_60_s,Mean,4,4,4,-0.01164443,-0.02038691,1.256562,1.004743,11.52268,0.1636023,0,0
+"nested, random KFold",acceleration_0_60_s,Ridge (all features),0,0,0,0.4851534,0.2691868,0.8964144,0.6361321,7.246004,2.226401,0,0
+"nested, random KFold",acceleration_0_60_s,Ridge (all features),1,1,1,0.1366457,0.1670802,1.160819,0.8754971,9.966571,2.149455,0,0
+"nested, random KFold",acceleration_0_60_s,Ridge (all features),2,2,2,0.4906559,0.3888289,0.8916112,0.7205045,8.301261,2.074112,0,0
+"nested, random KFold",acceleration_0_60_s,Ridge (all features),3,3,3,0.3867344,0.1804913,0.9783499,0.7552318,8.573594,2.128372,0,0
+"nested, random KFold",acceleration_0_60_s,Ridge (all features),4,4,4,0.3923287,0.3442774,0.9738773,0.7248553,8.357575,2.218468,0,0
+"nested, random KFold",acceleration_0_60_s,Lasso (no SFS),0,0,0,0.4087015,0.1405121,0.9606679,0.7434515,8.54881,1.972817,0,0
+"nested, random KFold",acceleration_0_60_s,Lasso (no SFS),1,1,1,0.1544963,0.09239439,1.148756,0.8681563,9.955226,2.31212,0,0
+"nested, random KFold",acceleration_0_60_s,Lasso (no SFS),2,2,2,0.4915733,0.4326648,0.8908079,0.710496,8.253843,2.066597,0,0
+"nested, random KFold",acceleration_0_60_s,Lasso (no SFS),3,3,3,0.291389,0.07673958,1.051656,0.8414873,9.579486,2.194007,0,0
+"nested, random KFold",acceleration_0_60_s,Lasso (no SFS),4,4,4,0.3414425,0.2679915,1.013834,0.8103261,9.305577,1.70482,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Linear regression,0,0,0,0.6911641,-0.6411314,3.132094,2.597451,2.657742,1.710323,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Linear regression,1,1,1,0.6795743,0.4412309,3.190322,2.854699,2.912733,1.891514,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Linear regression,2,2,2,0.7077191,0.6279451,3.04699,2.656072,2.720174,2.572437,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Linear regression,3,3,3,0.7446867,0.6346688,2.847787,2.542383,2.592384,2.251206,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Linear regression,4,4,4,0.7656074,0.6951845,2.728618,2.349119,2.401167,1.907496,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Lasso,0,0,0,0.6972839,-0.363385,3.100906,2.610222,2.675827,2.074239,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Lasso,1,1,1,0.6592484,0.4417719,3.289954,2.807033,2.886535,2.238914,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Lasso,2,2,2,0.6620251,0.5075193,3.276522,2.787127,2.872051,2.094241,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Lasso,3,3,3,0.7306678,0.5984003,2.924927,2.614239,2.683301,2.531122,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Lasso,4,4,4,0.7580551,0.7017054,2.772229,2.34205,2.413875,2.034152,0,0
+flat (thesis re-implementation),passenger_volume_cuft,kNN,0,0,0,0.7343045,0.2080693,2.905112,2.370968,2.406654,2.557354,0,0
+flat (thesis re-implementation),passenger_volume_cuft,kNN,1,1,1,0.6781811,0.4779519,3.19725,2.427184,2.477682,2.611631,0,0
+flat (thesis re-implementation),passenger_volume_cuft,kNN,2,2,2,0.7706194,0.6938984,2.699288,2.130427,2.187079,2.946333,0,0
+flat (thesis re-implementation),passenger_volume_cuft,kNN,3,3,3,0.7577656,0.6903724,2.773887,2.155966,2.221751,3.132629,0,0
+flat (thesis re-implementation),passenger_volume_cuft,kNN,4,4,4,0.780815,0.7348668,2.638617,2.07327,2.132616,2.964702,0,0
+flat (thesis re-implementation),passenger_volume_cuft,SVR,0,0,0,0.6815519,-0.4676539,3.180462,2.548042,2.609366,2.894838,0,0
+flat (thesis re-implementation),passenger_volume_cuft,SVR,1,1,1,0.7437063,0.5874699,2.85325,2.503456,2.567685,2.857079,0,0
+flat (thesis re-implementation),passenger_volume_cuft,SVR,2,2,2,0.6797369,0.6586907,3.189512,2.531913,2.646271,2.895557,0,0
+flat (thesis re-implementation),passenger_volume_cuft,SVR,3,3,3,0.7876654,0.7169869,2.597056,2.142907,2.201288,3.664679,0,0
+flat (thesis re-implementation),passenger_volume_cuft,SVR,4,4,4,0.7807443,0.7707284,2.639042,2.081989,2.172599,2.604849,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Mean,0,0,0,-0.1376862,-2.610442,6.011489,4.979505,5.173942,0.08936821,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Mean,1,1,1,-0.05770182,-0.2450003,5.796321,4.627887,4.818886,0.06767467,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Mean,2,2,2,-0.03137148,-0.2205046,5.72372,4.597645,4.790028,0.07196354,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Mean,3,3,3,-0.06785003,-0.4071219,5.824062,4.760129,4.95281,0.05481679,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Mean,4,4,4,-0.04956404,-0.2882836,5.77398,4.632118,4.825823,0.0714115,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Ridge (all features),0,0,0,0.7118179,0.1725187,3.02555,2.631593,2.717892,0.4709303,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Ridge (all features),1,1,1,0.5704293,0.3369088,3.693926,3.092869,3.213764,0.4780623,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Ridge (all features),2,2,2,0.6071004,0.4591453,3.53274,3.132545,3.203176,0.3975817,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Ridge (all features),3,3,3,0.6884511,0.5393852,3.14582,2.876358,2.932462,0.4475122,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Ridge (all features),4,4,4,0.7233893,0.6401382,2.964185,2.640203,2.718161,0.4606728,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Lasso (no SFS),0,0,0,0.6593731,-0.3535212,3.289352,2.773949,2.859359,0.3976266,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Lasso (no SFS),1,1,1,0.556108,0.2597626,3.754996,3.32877,3.414481,0.5810159,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Lasso (no SFS),2,2,2,0.6102989,0.4563689,3.518331,3.068392,3.167632,0.4234047,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Lasso (no SFS),3,3,3,0.6666377,0.5156683,3.254087,2.964126,3.017943,0.4644806,0,0
+flat (thesis re-implementation),passenger_volume_cuft,Lasso (no SFS),4,4,4,0.7076881,0.6056802,3.047152,2.61901,2.67671,0.3481711,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Linear regression,0,0,0,0.6898481,0.4261625,0.8845644,0.7096346,4.556198,2.273537,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Linear regression,1,1,1,0.7755044,0.6858473,0.7525687,0.5773305,3.710169,1.734324,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Linear regression,2,2,2,0.7590445,0.5733155,0.7796697,0.6233424,4.024952,1.586859,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Linear regression,3,3,3,0.7898188,0.6964378,0.7281808,0.5846295,3.758941,2.014855,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Linear regression,4,4,4,0.7413987,0.5976268,0.807714,0.646213,4.176297,1.566889,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Lasso,0,0,0,0.6770863,0.5002714,0.9025795,0.7351762,4.741272,2.102053,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Lasso,1,1,1,0.7640982,0.663058,0.7714502,0.6085467,3.907314,2.578942,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Lasso,2,2,2,0.760078,0.5927501,0.7779958,0.6189085,3.991476,2.210572,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Lasso,3,3,3,0.7876956,0.6937261,0.7318494,0.5912645,3.800362,2.383927,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Lasso,4,4,4,0.7052313,0.5358059,0.8623487,0.6676783,4.345048,2.416444,0,0
+flat (thesis re-implementation),cargo_volume_cuft,kNN,0,0,0,0.6674406,0.4810518,0.9159607,0.7449127,4.81614,2.20352,0,0
+flat (thesis re-implementation),cargo_volume_cuft,kNN,1,1,1,0.6280815,0.5760547,0.9686483,0.8322581,5.312175,2.147543,0,0
+flat (thesis re-implementation),cargo_volume_cuft,kNN,2,2,2,0.7432696,0.6785059,0.8047868,0.6318791,4.110796,2.485167,0,0
+flat (thesis re-implementation),cargo_volume_cuft,kNN,3,3,3,0.671765,0.6018559,0.909986,0.6843926,4.376939,2.438139,0,0
+flat (thesis re-implementation),cargo_volume_cuft,kNN,4,4,4,0.680151,0.6439563,0.8982863,0.7319174,4.777267,2.781403,0,0
+flat (thesis re-implementation),cargo_volume_cuft,SVR,0,0,0,0.6866671,0.5637904,0.8890889,0.7011951,4.486677,3.909194,0,0
+flat (thesis re-implementation),cargo_volume_cuft,SVR,1,1,1,0.838624,0.7941102,0.6380603,0.4845378,3.098451,2.51939,0,0
+flat (thesis re-implementation),cargo_volume_cuft,SVR,2,2,2,0.7390501,0.5474586,0.8113735,0.5963485,3.796467,2.828574,0,0
+flat (thesis re-implementation),cargo_volume_cuft,SVR,3,3,3,0.7671545,0.67567,0.7664365,0.6541495,4.245369,2.716221,0,0
+flat (thesis re-implementation),cargo_volume_cuft,SVR,4,4,4,0.7309965,0.5145852,0.8237988,0.6155435,3.974728,3.193795,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Mean,0,0,0,-0.05893828,-0.4587573,1.634472,1.37672,8.950079,0.05420762,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Mean,1,1,1,-0.03288562,-0.09278378,1.614241,1.354435,8.808928,0.05588571,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Mean,2,2,2,-0.08225219,-0.2438296,1.652367,1.373694,8.937737,0.053702,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Mean,3,3,3,-0.08750332,-0.3688845,1.656371,1.376409,8.958633,0.04269617,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Mean,4,4,4,-0.07653264,-0.2502152,1.647995,1.381634,8.996456,0.04348004,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Ridge (all features),0,0,0,0.580212,0.3142133,1.029099,0.8831043,5.724737,0.5020483,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Ridge (all features),1,1,1,0.6655386,0.530203,0.9185763,0.7316943,4.760443,0.6125121,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Ridge (all features),2,2,2,0.6529037,0.5004997,0.9357659,0.7523525,4.90368,0.785656,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Ridge (all features),3,3,3,0.659678,0.5404642,0.9265892,0.7552324,4.904075,0.6164683,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Ridge (all features),4,4,4,0.5672129,0.3651651,1.044911,0.8603622,5.605871,0.3692037,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Lasso (no SFS),0,0,0,0.6601646,0.4642143,0.9259265,0.7715201,4.98666,0.4638843,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Lasso (no SFS),1,1,1,0.6743483,0.5501352,0.906398,0.7393107,4.818346,0.5261025,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Lasso (no SFS),2,2,2,0.6644028,0.5025946,0.9201347,0.7434473,4.84106,0.322688,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Lasso (no SFS),3,3,3,0.6756597,0.5574108,0.9045711,0.7142001,4.620915,0.4819708,0,0
+flat (thesis re-implementation),cargo_volume_cuft,Lasso (no SFS),4,4,4,0.659788,0.4885018,0.9264395,0.7093028,4.598157,0.539468,0,0
+flat (thesis re-implementation),towing_capacity_lb,Linear regression,0,0,0,0.5766751,0.2386548,235.1527,175.4835,14.49547,3.028815,0,0
+flat (thesis re-implementation),towing_capacity_lb,Linear regression,1,1,1,0.6183019,0.2366088,223.292,178.0402,14.70209,3.076856,0,0
+flat (thesis re-implementation),towing_capacity_lb,Linear regression,2,2,2,0.7088509,0.4769744,195.0163,143.0383,12.25168,1.776986,0,0
+flat (thesis re-implementation),towing_capacity_lb,Linear regression,3,3,3,0.6687859,0.3092639,208.002,157.0026,12.71604,2.859981,0,0
+flat (thesis re-implementation),towing_capacity_lb,Linear regression,4,4,4,0.5928826,0.4227311,230.6073,174.5966,14.99511,2.104249,0,0
+flat (thesis re-implementation),towing_capacity_lb,Lasso,0,0,0,0.5761259,0.2637926,235.3052,173.1374,14.41606,3.072937,0,0
+flat (thesis re-implementation),towing_capacity_lb,Lasso,1,1,1,-0.05786483,-0.8270283,371.7305,300,23.02344,2.502523,0,0
+flat (thesis re-implementation),towing_capacity_lb,Lasso,2,2,2,0.7036771,0.4502704,196.7414,139.5873,12.04689,2.386068,0,0
+flat (thesis re-implementation),towing_capacity_lb,Lasso,3,3,3,0.6587769,0.2280711,211.1215,149.5804,12.64017,3.373779,0,0
+flat (thesis re-implementation),towing_capacity_lb,Lasso,4,4,4,0.5661588,0.5090982,238.0557,154.3831,13.09493,2.555514,0,0
+flat (thesis re-implementation),towing_capacity_lb,kNN,0,0,0,0.5190083,0.3418735,250.6582,140.2394,11.8869,2.804504,0,0
+flat (thesis re-implementation),towing_capacity_lb,kNN,1,1,1,0.4409257,0.3053709,270.2389,164.1725,14.32188,2.844377,0,0
+flat (thesis re-implementation),towing_capacity_lb,kNN,2,2,2,0.4838126,0.297576,259.667,158.0429,13.69344,2.826167,0,0
+flat (thesis re-implementation),towing_capacity_lb,kNN,3,3,3,0.4649488,0.3816968,264.3692,149.4518,10.74,3.857556,0,0
+flat (thesis re-implementation),towing_capacity_lb,kNN,4,4,4,0.5207777,0.502648,250.1967,121.3295,9.819492,3.828813,0,0
+flat (thesis re-implementation),towing_capacity_lb,SVR,0,0,0,0.7359878,0.7571551,185.7057,101.6852,7.962192,3.845944,0,0
+flat (thesis re-implementation),towing_capacity_lb,SVR,1,1,1,0.6410793,0.0734256,216.5272,172.2115,13.84724,3.351574,0,0
+flat (thesis re-implementation),towing_capacity_lb,SVR,2,2,2,0.7563124,0.5123602,178.4144,117.377,9.881192,2.792912,0,0
+flat (thesis re-implementation),towing_capacity_lb,SVR,3,3,3,0.724486,0.3562085,189.7077,120.1475,9.412058,3.804326,0,0
+flat (thesis re-implementation),towing_capacity_lb,SVR,4,4,4,0.6018086,0.4579185,228.0652,160.8855,12.51355,3.853984,0,0
+flat (thesis re-implementation),towing_capacity_lb,Mean,0,0,0,-0.05786483,-0.8270283,371.7305,300,23.02344,0.06183987,0,0
+flat (thesis re-implementation),towing_capacity_lb,Mean,1,1,1,-0.05786483,-0.8270283,371.7305,300,23.02344,0.08170483,0,0
+flat (thesis re-implementation),towing_capacity_lb,Mean,2,2,2,-0.09150718,-0.1586174,377.5952,309.375,23.85938,0.0657325,0,0
+flat (thesis re-implementation),towing_capacity_lb,Mean,3,3,3,-0.1655203,-0.326254,390.1873,317.1875,24.4401,0.06631867,0,0
+flat (thesis re-implementation),towing_capacity_lb,Mean,4,4,4,-0.1789773,-0.9685789,392.4333,317.1875,24.3724,0.07066254,0,0
+flat (thesis re-implementation),towing_capacity_lb,Ridge (all features),0,0,0,0.5281012,0.0092804,248.2776,186.2195,15.8326,0.3972851,0,0
+flat (thesis re-implementation),towing_capacity_lb,Ridge (all features),1,1,1,-0.14359,-2.366541,386.499,315.8994,24.94661,0.5051116,0,0
+flat (thesis re-implementation),towing_capacity_lb,Ridge (all features),2,2,2,0.5187619,0.2167302,250.7224,172.4144,15.18067,0.5630949,0,0
+flat (thesis re-implementation),towing_capacity_lb,Ridge (all features),3,3,3,0.5296263,-0.05008918,247.8761,174.5174,15.04508,0.4783337,0,0
+flat (thesis re-implementation),towing_capacity_lb,Ridge (all features),4,4,4,0.3019212,0.413748,301.9711,209.7282,17.96192,0.6552781,0,0
+flat (thesis re-implementation),towing_capacity_lb,Lasso (no SFS),0,0,0,0.5212875,0.06111282,250.0636,183.1161,15.66631,0.4901145,0,0
+flat (thesis re-implementation),towing_capacity_lb,Lasso (no SFS),1,1,1,-0.07543826,-0.9919971,374.8054,304.5408,23.45487,0.5888053,0,0
+flat (thesis re-implementation),towing_capacity_lb,Lasso (no SFS),2,2,2,0.4641223,0.2845629,264.5733,183.544,16.02605,0.595135,0,0
+flat (thesis re-implementation),towing_capacity_lb,Lasso (no SFS),3,3,3,0.3699743,-0.1476397,286.8747,210.3861,16.68561,0.5811156,0,0
+flat (thesis re-implementation),towing_capacity_lb,Lasso (no SFS),4,4,4,0.3204441,0.4071557,297.9379,198.9266,17.32081,0.6441292,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Linear regression,0,0,0,0.3783476,0.1493686,1.648694,1.436603,5.859581,2.648506,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Linear regression,1,1,1,0.3388428,-0.6365297,1.700273,1.456656,5.930048,2.36611,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Linear regression,2,2,2,0.3525015,0.1309295,1.682619,1.47047,5.99819,4.918394,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Linear regression,3,3,3,0.3441515,0.05511428,1.693433,1.414539,5.778263,2.901096,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Linear regression,4,4,4,0.3842085,0.1209287,1.640904,1.410398,5.759798,2.73357,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Lasso,0,0,0,0.3323097,0.1587222,1.708653,1.457915,5.949369,2.992002,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Lasso,1,1,1,0.3076416,-0.5597942,1.73993,1.545582,6.327064,3.101943,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Lasso,2,2,2,0.3158822,0.0998956,1.729545,1.509515,6.166837,2.687288,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Lasso,3,3,3,0.3294912,0.10701,1.712255,1.444241,5.900919,2.975737,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Lasso,4,4,4,0.3334265,0.2049428,1.707223,1.460052,5.969056,3.075821,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,kNN,0,0,0,0.4838734,0.3991946,1.502258,1.159944,4.722866,4.074513,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,kNN,1,1,1,0.4918061,0.2289876,1.490668,1.174917,4.813589,3.155641,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,kNN,2,2,2,0.4802667,0.3458583,1.507497,1.169834,4.77127,3.631975,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,kNN,3,3,3,0.3674999,0.1967613,1.663017,1.342742,5.475167,5.35666,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,kNN,4,4,4,0.4180857,0.3423161,1.595129,1.285714,5.211135,3.843889,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,SVR,0,0,0,0.4629287,0.3782542,1.532436,1.164872,4.725177,3.376352,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,SVR,1,1,1,0.3711137,-0.2568819,1.658259,1.480414,6.06864,4.275185,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,SVR,2,2,2,0.299674,0.1172256,1.749913,1.548306,6.369682,3.450597,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,SVR,3,3,3,0.2669611,0.1290758,1.790317,1.437592,5.836985,3.523041,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,SVR,4,4,4,0.2729344,0.2071159,1.783007,1.443103,5.816033,4.388131,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Mean,0,0,0,-0.0661257,-0.328228,2.159089,1.777473,7.268381,0.099176,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Mean,1,1,1,-0.05320977,-0.4515889,2.145971,1.75457,7.173591,0.09475242,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Mean,2,2,2,-0.08752733,-0.2920981,2.180652,1.754677,7.169725,0.1226733,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Mean,3,3,3,-0.09656649,-0.4121179,2.189696,1.782742,7.280718,0.1079358,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Mean,4,4,4,-0.02829092,-0.07971589,2.120432,1.719516,7.034551,0.07510417,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Ridge (all features),0,0,0,0.2125634,0.1054926,1.855556,1.533065,6.268389,0.7432682,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Ridge (all features),1,1,1,0.2226246,-0.2000591,1.843664,1.555099,6.388986,0.7868078,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Ridge (all features),2,2,2,0.1384117,-0.08991014,1.940958,1.65797,6.731161,0.6867785,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Ridge (all features),3,3,3,0.2147718,0.04279566,1.852952,1.52621,6.221062,0.6807984,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Ridge (all features),4,4,4,0.1748782,0.1172056,1.899439,1.561052,6.398595,0.8186563,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Lasso (no SFS),0,0,0,0.3003962,0.1308329,1.74901,1.502349,6.122946,0.9105749,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Lasso (no SFS),1,1,1,0.2679592,-0.585805,1.789097,1.594298,6.562184,0.7736167,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Lasso (no SFS),2,2,2,0.1668842,-0.05761342,1.908618,1.619101,6.633603,0.7463457,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Lasso (no SFS),3,3,3,0.2749021,0.05957761,1.780593,1.513258,6.181483,0.8126437,0,0
+flat (thesis re-implementation),fuel_efficiency_mpg,Lasso (no SFS),4,4,4,0.1873766,0.08263939,1.884998,1.589803,6.506002,0.8482271,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Linear regression,0,0,0,0.6344807,0.4666371,0.7553097,0.6129415,7.026054,3.528488,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Linear regression,1,1,1,0.5595751,0.4085378,0.8290979,0.6552917,7.484844,4.017396,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Linear regression,2,2,2,0.6169834,0.5304414,0.7731766,0.6209839,7.117045,3.563281,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Linear regression,3,3,3,0.5376013,0.4071596,0.849529,0.6872717,7.902005,3.453864,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Linear regression,4,4,4,0.5986235,0.5501879,0.7914908,0.6389176,7.287281,4.180803,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Lasso,0,0,0,0.6217346,0.458529,0.7683661,0.5882413,6.765996,4.083342,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Lasso,1,1,1,0.4355091,0.4299505,0.9386385,0.7490998,8.590382,5.447996,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Lasso,2,2,2,0.6059442,0.5324991,0.7842396,0.615692,7.102683,4.270942,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Lasso,3,3,3,0.5313486,0.4105078,0.8552535,0.6872711,7.905729,3.412873,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Lasso,4,4,4,0.5710602,0.5419622,0.8182161,0.6376233,7.342102,3.561956,0,0
+flat (thesis re-implementation),acceleration_0_60_s,kNN,0,0,0,0.6014383,0.382193,0.7887106,0.5917644,6.907743,4.959166,0,0
+flat (thesis re-implementation),acceleration_0_60_s,kNN,1,1,1,0.5256774,0.3141424,0.8604127,0.6079831,7.133119,5.065998,0,0
+flat (thesis re-implementation),acceleration_0_60_s,kNN,2,2,2,0.5859863,0.5584256,0.8038542,0.5639418,6.576284,4.6756,0,0
+flat (thesis re-implementation),acceleration_0_60_s,kNN,3,3,3,0.4914524,0.4394929,0.8909138,0.6398387,7.422018,7.973707,0,0
+flat (thesis re-implementation),acceleration_0_60_s,kNN,4,4,4,0.6155844,0.5533911,0.7745873,0.5638903,6.61388,7.181728,0,0
+flat (thesis re-implementation),acceleration_0_60_s,SVR,0,0,0,0.6025833,0.4242829,0.7875768,0.57145,6.630335,5.548058,0,0
+flat (thesis re-implementation),acceleration_0_60_s,SVR,1,1,1,0.4889008,0.4923739,0.8931461,0.6332245,7.322213,5.377387,0,0
+flat (thesis re-implementation),acceleration_0_60_s,SVR,2,2,2,0.5803674,0.5308469,0.8092906,0.6138166,7.120381,6.063027,0,0
+flat (thesis re-implementation),acceleration_0_60_s,SVR,3,3,3,0.4760175,0.4517966,0.9043328,0.6837959,7.979076,4.682014,0,0
+flat (thesis re-implementation),acceleration_0_60_s,SVR,4,4,4,0.549113,0.5348107,0.8388875,0.5944243,6.924969,4.669233,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Mean,0,0,0,-0.1627114,-0.7090969,1.347119,1.074933,12.3064,0.1343768,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Mean,1,1,1,-0.01439197,-0.04189102,1.258267,1.010996,11.57815,0.1731583,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Mean,2,2,2,-0.08880851,-0.2655178,1.303604,1.059253,12.1208,0.1614356,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Mean,3,3,3,-0.0900715,-0.3871742,1.30436,1.061274,12.15273,0.107666,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Mean,4,4,4,-0.01164443,-0.02038691,1.256562,1.004743,11.52268,0.2709283,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Ridge (all features),0,0,0,0.5364923,0.3404151,0.8505471,0.617514,6.96175,1.073495,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Ridge (all features),1,1,1,0.4015916,0.3461423,0.9664263,0.7360275,8.47139,1.00531,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Ridge (all features),2,2,2,0.4906559,0.3888289,0.8916112,0.7205045,8.301261,0.8492239,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Ridge (all features),3,3,3,0.4180832,0.3639676,0.9530163,0.7045529,8.137334,0.8582351,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Ridge (all features),4,4,4,0.4407034,0.4157049,0.93431,0.6909748,7.938331,0.9253158,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Lasso (no SFS),0,0,0,0.5535998,0.3666387,0.8347032,0.6451256,7.27033,0.9719193,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Lasso (no SFS),1,1,1,0.3417346,0.2614842,1.013609,0.8215768,9.493064,0.9266134,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Lasso (no SFS),2,2,2,0.5072549,0.4202188,0.8769626,0.7136691,8.197599,0.8546476,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Lasso (no SFS),3,3,3,0.3918891,0.1196348,0.9742295,0.7645025,8.653204,0.7600766,0,0
+flat (thesis re-implementation),acceleration_0_60_s,Lasso (no SFS),4,4,4,0.4192226,0.3391884,0.9520829,0.7697694,8.776052,0.701057,0,0

@@ -1,17 +1,28 @@
-"""Model selection for small engineering datasets with nested cross-validation."""
+"""Model selection for small grouped engineering datasets with nested cross-validation."""
 
-from .data import FEATURES, GROUP_COLUMN, TARGETS, Dataset, load_dataset
+from .artifacts import check_run, load_run, save_run
+from .data import FEATURES, GROUP_COLUMN, TARGETS, Dataset, file_sha256, load_dataset
 from .modeling import (
+    COMPLETE_PROCEDURE,
     N_ITER,
     SEEDS,
     Candidate,
     CVResult,
+    FailureRecord,
+    FoldDetail,
+    InvalidFitError,
+    WarningRecord,
+    baseline_candidates,
     default_candidates,
     flat_cv,
+    jaccard_stability,
     nested_cv,
+    nested_cv_complete,
     results_table,
     run_repeated,
     selection_frequency,
+    selection_stability,
+    validate_inputs,
 )
 
 __all__ = [
@@ -20,14 +31,28 @@ __all__ = [
     "TARGETS",
     "Dataset",
     "load_dataset",
+    "file_sha256",
+    "COMPLETE_PROCEDURE",
     "N_ITER",
     "SEEDS",
     "Candidate",
     "CVResult",
+    "FailureRecord",
+    "FoldDetail",
+    "InvalidFitError",
+    "WarningRecord",
+    "baseline_candidates",
     "default_candidates",
     "flat_cv",
+    "jaccard_stability",
     "nested_cv",
+    "nested_cv_complete",
     "results_table",
     "run_repeated",
     "selection_frequency",
+    "selection_stability",
+    "validate_inputs",
+    "save_run",
+    "load_run",
+    "check_run",
 ]

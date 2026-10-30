@@ -1,0 +1,88 @@
+{
+  "created_utc": "2026-10-30T10:19:05+00:00",
+  "config": {
+    "data": "/Users/Kien/Desktop/Project Codex/public-repos/small-data-model-selection/data/midsize_sedans.csv",
+    "out": "results/runs/vary_folds",
+    "target": [
+      "all"
+    ],
+    "models": [
+      "families",
+      "baselines"
+    ],
+    "protocol": [
+      "nested-group"
+    ],
+    "complete": false,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "vary": "folds",
+    "fold_seed": 0,
+    "search_seed": 0,
+    "outer_splits": 5,
+    "inner_splits": 5,
+    "n_iter": 15,
+    "n_jobs": -1,
+    "preset": null,
+    "targets": [
+      "passenger_volume_cuft",
+      "cargo_volume_cuft",
+      "towing_capacity_lb",
+      "fuel_efficiency_mpg",
+      "acceleration_0_60_s"
+    ],
+    "candidates": [
+      "Linear regression",
+      "Lasso",
+      "kNN",
+      "SVR",
+      "Mean",
+      "Ridge (all features)",
+      "Lasso (no SFS)"
+    ],
+    "timings_s": {
+      "nested-group": 314.1
+    },
+    "complete_procedure_families": []
+  },
+  "data": {
+    "path": "/Users/Kien/Desktop/Project Codex/public-repos/small-data-model-selection/data/midsize_sedans.csv",
+    "sha256": "fc2d8ac2c82904e47f08c37b47328d849315c047069385a0529276dffc24fb1f"
+  },
+  "git_commit": "764cd7432ffbeba909aeadc62b72b24922f8c36e",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "mlxtend": "0.25.0",
+    "joblib": "1.6.0"
+  },
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "argv": [
+    "/Users/Kien/Desktop/Project Codex/public-repos/small-data-model-selection/src/smalldata/run.py",
+    "--vary",
+    "folds",
+    "--search-seed",
+    "0",
+    "--seeds",
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "--no-complete",
+    "--out",
+    "results/runs/vary_folds"
+  ],
+  "n_runs": 175,
+  "n_warnings": 0,
+  "n_failed_candidates": 0,
+  "total_runtime_s": 2407.1827973702457
+}
